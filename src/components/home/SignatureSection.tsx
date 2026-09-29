@@ -34,30 +34,52 @@ export const SignatureSection: React.FC = () => {
 
           <p className="text-sm sm:text-base font-sans text-[#3C2C26]/85 dark:text-[#C8B79C]/85 leading-relaxed">
             {language === 'fr'
-              ? 'Le style Junior Zeus ne cherche pas à imposer un uniforme standardisé. Chaque silhouette est pensée comme une armure de distinction moderne : elle souligne l’autorité bienveillante, affine la posture et sublime l’homme qui la revêt.'
-              : 'Junior Zeus Style never imposes a standardized uniform. Each creation is envisioned as modern armor of distinction: elevating quiet authority, calibrating poise, and magnifying the individual within.'}
+              ? 'Fidèle à sa devise « Ma passion vous sublimer », la maison Junior Zeus Style s’adresse aux dames comme aux messieurs. Chaque création est pensée comme une œuvre sartoriale : elle affine la posture, honore les matières nobles et magnifie la singularité de celui ou celle qui la porte.'
+              : 'True to its motto « My passion is to sublimate you », Junior Zeus Style creates for both women and men. Each garment is crafted as sartorial art: calibrating posture, honoring noble textiles, and elevating individual poise.'}
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-[#3C2C26]/10 dark:border-[#C8B79C]/10 text-xs font-sans">
-            <div className="p-4 bg-[#EFEAE0]/60 dark:bg-[#111113]/60 rounded-xs border border-[#3C2C26]/10 dark:border-[#C8B79C]/10 shadow-xs">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-4 border-t border-[#3C2C26]/10 dark:border-[#C8B79C]/10 text-xs font-sans">
+            <div className="p-3.5 bg-[#EFEAE0]/60 dark:bg-[#111113]/60 rounded-xs border border-[#3C2C26]/10 dark:border-[#C8B79C]/10 shadow-xs">
               <h3 className="font-bold uppercase tracking-wider text-[#9C7A4B] mb-1">
-                {language === 'fr' ? 'Coupes Cérémonielles' : 'Ceremonial Cuts'}
+                {language === 'fr' ? 'Haute Couture Mixte' : 'Bespoke Haute Couture'}
               </h3>
-              <p className="text-[#3C2C26]/75 dark:text-[#C8B79C]/75 leading-relaxed">
+              <p className="text-[#3C2C26]/75 dark:text-[#C8B79C]/75 leading-relaxed text-[11px]">
                 {language === 'fr'
-                  ? 'Pour mariages, galas et grands événements à Yaoundé et à l’international.'
-                  : 'For weddings, state galas, and diplomatic occasions in Yaoundé and abroad.'}
+                  ? 'Costumes d’apparat, complets et tailleurs sur mesure pour hommes et femmes.'
+                  : 'Ceremonial suits, bespoke tailoring for men and women.'}
               </p>
             </div>
 
-            <div className="p-4 bg-[#EFEAE0]/60 dark:bg-[#111113]/60 rounded-xs border border-[#3C2C26]/10 dark:border-[#C8B79C]/10 shadow-xs">
+            <div className="p-3.5 bg-[#EFEAE0]/60 dark:bg-[#111113]/60 rounded-xs border border-[#3C2C26]/10 dark:border-[#C8B79C]/10 shadow-xs">
               <h3 className="font-bold uppercase tracking-wider text-[#9C7A4B] mb-1">
-                {language === 'fr' ? 'Accompagnement Privé' : 'Private Consultation'}
+                {language === 'fr' ? 'Robes de Mariées & Soirée' : 'Bridal & Gala Gowns'}
               </h3>
-              <p className="text-[#3C2C26]/75 dark:text-[#C8B79C]/75 leading-relaxed">
+              <p className="text-[#3C2C26]/75 dark:text-[#C8B79C]/75 leading-relaxed text-[11px]">
                 {language === 'fr'
-                  ? 'Essayages sur mesure, conseils de style et finitions personnalisées.'
-                  : 'Private fittings, bespoke styling direction, and personalized detailing.'}
+                  ? 'Confection sur mesure exclusive et location clé en main avec retouches.'
+                  : 'Exclusive bespoke creations and convenient gown rental with adjustments.'}
+              </p>
+            </div>
+
+            <div className="p-3.5 bg-[#EFEAE0]/60 dark:bg-[#111113]/60 rounded-xs border border-[#3C2C26]/10 dark:border-[#C8B79C]/10 shadow-xs">
+              <h3 className="font-bold uppercase tracking-wider text-[#9C7A4B] mb-1">
+                {language === 'fr' ? 'Tenues Africaines & Ville' : 'African & City Wear'}
+              </h3>
+              <p className="text-[#3C2C26]/75 dark:text-[#C8B79C]/75 leading-relaxed text-[11px]">
+                {language === 'fr'
+                  ? 'Tuniques brodées signature, boubous modernes et complets urbains élégants.'
+                  : 'Signature embroidered tunics, modern boubous, and urban chic sets.'}
+              </p>
+            </div>
+
+            <div className="p-3.5 bg-[#EFEAE0]/60 dark:bg-[#111113]/60 rounded-xs border border-[#3C2C26]/10 dark:border-[#C8B79C]/10 shadow-xs">
+              <h3 className="font-bold uppercase tracking-wider text-[#9C7A4B] mb-1">
+                {language === 'fr' ? 'Formation Professionnelle' : 'Vocational Training'}
+              </h3>
+              <p className="text-[#3C2C26]/75 dark:text-[#C8B79C]/75 leading-relaxed text-[11px]">
+                {language === 'fr'
+                  ? 'Apprentissage pratique de la coupe, du modélisme et de la couture de luxe.'
+                  : 'Hands-on training in pattern drafting, cutting, and luxury tailoring.'}
               </p>
             </div>
           </div>

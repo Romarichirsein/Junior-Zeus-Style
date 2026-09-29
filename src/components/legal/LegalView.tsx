@@ -34,17 +34,21 @@ export const LegalView: React.FC = () => {
           {language === 'fr' ? (
             <>
               Le présent site web <strong>juniorzeusstyle.com</strong> est édité par la maison de création <strong>Junior Zeus Style</strong>, fondée par <strong>Ariel Junior Nzesseu</strong> (Junior Zeus).<br />
-              <strong>Siège de l’atelier :</strong> Descente Éleveur, en face de Turbo, Yaoundé, Cameroun (Ngousso).<br />
-              <strong>Contact téléphonique / WhatsApp :</strong> +237 691 087 382 / +237 671 621 140.<br />
-              <strong>Adresse e-mail :</strong> contact@juniorzeusstyle.com.<br />
+              <strong>Devise de la maison :</strong> « Ma passion vous sublimer ».<br />
+              <strong>Siège de l’atelier :</strong> Yaoundé - Descente Éleveur, face Turbo Distribution Center, Cameroun.<br />
+              <strong>Contact téléphonique / WhatsApp :</strong> +237 691 087 382 (691 08 73 82).<br />
+              <strong>Adresse e-mail officielle :</strong> juniortamno13@gmail.com.<br />
+              <strong>Réseaux officiels :</strong> Facebook : Junior Zeus style · Instagram : Junior Zeus style.<br />
               <strong>Directeur de la publication :</strong> Ariel Junior Nzesseu.
             </>
           ) : (
             <>
               This website <strong>juniorzeusstyle.com</strong> is published by <strong>Junior Zeus Style</strong>, founded by <strong>Ariel Junior Nzesseu</strong> (Junior Zeus).<br />
-              <strong>Atelier address:</strong> Descente Éleveur, opposite Turbo, Yaoundé, Cameroon.<br />
-              <strong>Telephone / WhatsApp:</strong> +237 691 087 382 / +237 671 621 140.<br />
-              <strong>Email:</strong> contact@juniorzeusstyle.com.<br />
+              <strong>House Motto:</strong> « My passion is to sublimate you ».<br />
+              <strong>Atelier address:</strong> Yaoundé - Descente Éleveur, opposite Turbo Distribution Center, Cameroon.<br />
+              <strong>Telephone / WhatsApp:</strong> +237 691 087 382 (691 08 73 82).<br />
+              <strong>Official Email:</strong> juniortamno13@gmail.com.<br />
+              <strong>Official Social Channels:</strong> Facebook: Junior Zeus style · Instagram: Junior Zeus style.<br />
               <strong>Publication Director:</strong> Ariel Junior Nzesseu.
             </>
           )}
@@ -58,8 +62,8 @@ export const LegalView: React.FC = () => {
         </div>
         <p className="text-xs sm:text-sm font-sans text-[#3C2C26]/80 dark:text-[#C8B79C]/80 leading-relaxed">
           {language === 'fr'
-            ? 'Les données transmises via le formulaire de contact ou via WhatsApp (nom, numéro de téléphone, adresse e-mail, mensurations) sont exclusivement destinées au traitement de vos commandes de création sur mesure et à la relation client personnalisée. Elles ne sont ni vendues, ni cédées à des tiers. Conformément à la législation applicable, vous disposez d’un droit d’accès, de rectification et de suppression de vos données en écrivant à contact@juniorzeusstyle.com.'
-            : 'Personal information submitted through our contact form or WhatsApp (name, telephone, email address, measurements) is strictly used for handling bespoke garment orders and client communications. Your data is never sold or transferred to third parties. You may request access, modification, or erasure of your data at any time by contacting contact@juniorzeusstyle.com.'}
+            ? 'Les données transmises via le formulaire de contact ou via WhatsApp (nom, numéro de téléphone, adresse e-mail, mensurations) sont exclusivement destinées au traitement de vos commandes de création sur mesure et à la relation client personnalisée. Elles ne sont ni vendues, ni cédées à des tiers. Conformément à la législation applicable, vous disposez d’un droit d’accès, de rectification et de suppression de vos données en écrivant à juniortamno13@gmail.com.'
+            : 'Personal information submitted through our contact form or WhatsApp (name, telephone, email address, measurements) is strictly used for handling bespoke garment orders and client communications. Your data is never sold or transferred to third parties. You may request access, modification, or erasure of your data at any time by contacting juniortamno13@gmail.com.'}
         </p>
       </section>
 

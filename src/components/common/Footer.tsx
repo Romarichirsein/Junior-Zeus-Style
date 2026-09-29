@@ -68,24 +68,41 @@ export const Footer: React.FC = () => {
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#9C7A4B] shrink-0" />
                 <div className="flex flex-wrap gap-x-3">
-                  <a href={`tel:${siteSettings.primaryPhone.replace(/\s+/g, '')}`} className="hover:underline">
+                  <a href={`tel:${siteSettings.primaryPhone.replace(/\s+/g, '')}`} className="hover:underline font-semibold">
                     {siteSettings.primaryPhone}
-                  </a>
-                  <span className="opacity-40">·</span>
-                  <a href={`tel:${siteSettings.secondaryPhone.replace(/\s+/g, '')}`} className="hover:underline opacity-80">
-                    {siteSettings.secondaryPhone}
                   </a>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#9C7A4B] shrink-0" />
-                <a href={`mailto:${siteSettings.officialEmail}`} className="hover:underline">
+                <a href={`mailto:${siteSettings.officialEmail}`} className="hover:underline font-medium">
                   {siteSettings.officialEmail}
                 </a>
               </div>
 
-              <div className="pt-2 text-[11px] leading-relaxed opacity-75">
+              {/* Social Channels from flyer */}
+              <div className="pt-2 border-t border-[#3C2C26]/10 dark:border-[#C8B79C]/10 flex flex-wrap gap-3 text-[11px]">
+                <a
+                  href="https://facebook.com/juniorzeusstyle"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-[#1877F2] font-semibold"
+                >
+                  Fb : Junior Zeus style
+                </a>
+                <span className="opacity-40">·</span>
+                <a
+                  href="https://instagram.com/juniorzeusstyle"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-[#E4405F] font-semibold"
+                >
+                  IG : Junior Zeus style
+                </a>
+              </div>
+
+              <div className="pt-1 text-[11px] leading-relaxed opacity-75">
                 {t(siteSettings.openingHours)}
               </div>
             </div>
@@ -112,6 +129,14 @@ export const Footer: React.FC = () => {
                   className="hover:text-[#9C7A4B] transition-colors cursor-pointer"
                 >
                   {language === 'fr' ? 'Nos services de confection' : 'Bespoke tailoring services'}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => setActivePage('formation')}
+                  className="hover:text-[#9C7A4B] transition-colors cursor-pointer"
+                >
+                  {language === 'fr' ? 'Académie & Formations' : 'Academy & Training'}
                 </button>
               </li>
               <li>

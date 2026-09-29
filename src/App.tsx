@@ -16,6 +16,7 @@ import { LatestJournal } from './components/home/LatestJournal';
 import { CatalogueView } from './components/catalogue/CatalogueView';
 import { CreationDetailModal } from './components/catalogue/CreationDetailModal';
 import { ServicesView } from './components/services/ServicesView';
+import { FormationView } from './components/formation/FormationView';
 import { RendezVousView } from './components/rendezvous/RendezVousView';
 import { AboutView } from './components/about/AboutView';
 import { JournalView } from './components/journal/JournalView';
@@ -53,6 +54,8 @@ const AppContent: React.FC = () => {
         {activePage === 'catalogue' && <CatalogueView />}
 
         {activePage === 'services' && <ServicesView />}
+
+        {activePage === 'formation' && <FormationView />}
 
         {activePage === 'rendez-vous' && <RendezVousView />}
 

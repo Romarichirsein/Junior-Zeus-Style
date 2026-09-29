@@ -19,6 +19,7 @@ export const Header: React.FC = () => {
     { id: 'accueil', labelFr: 'Accueil', labelEn: 'Home' },
     { id: 'catalogue', labelFr: 'Catalogue', labelEn: 'Creations' },
     { id: 'services', labelFr: 'Services', labelEn: 'Services' },
+    { id: 'formation', labelFr: 'Formation', labelEn: 'Academy' },
     { id: 'rendez-vous', labelFr: 'Rendez-vous', labelEn: 'Book Fitting', isCta: true },
     { id: 'a-propos', labelFr: 'À Propos', labelEn: 'About' },
     { id: 'journal', labelFr: 'Journal', labelEn: 'Journal' },

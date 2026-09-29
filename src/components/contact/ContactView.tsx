@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
-import { MessageCircle, Phone, Mail, MapPin, Clock, CheckCircle2, AlertCircle, Send, Calendar } from 'lucide-react';
+import { MessageCircle, Phone, Mail, MapPin, Clock, CheckCircle2, AlertCircle, Send, Calendar, Share2, Sparkles, ExternalLink } from 'lucide-react';
 import { ContactInquiry } from '../../types';
 import { WhatsAppRadarAnimation, LuxuryStarAnimation } from '../lottie/LottieAnimations';
 import { motion } from 'motion/react';
@@ -164,7 +164,7 @@ export const ContactView: React.FC = () => {
                   <span className="font-semibold block text-[#0B0B0C] dark:text-[#F5F1E8]">
                     {language === 'fr' ? 'Adresse à Yaoundé :' : 'Yaoundé Studio Address:'}
                   </span>
-                  <p className="mt-0.5">{t(siteSettings.addressPrimary)}</p>
+                  <p className="mt-0.5 font-medium text-[#0B0B0C] dark:text-[#F5F1E8]">{t(siteSettings.addressPrimary)}</p>
                   <p className="opacity-75 text-[11px] mt-0.5">{t(siteSettings.addressSecondary)}</p>
                 </div>
               </div>
@@ -173,16 +173,13 @@ export const ContactView: React.FC = () => {
                 <Phone className="w-4 h-4 text-[#9C7A4B] shrink-0 mt-0.5" />
                 <div>
                   <span className="font-semibold block text-[#0B0B0C] dark:text-[#F5F1E8]">
-                    {language === 'fr' ? 'Téléphone & Appels :' : 'Telephone:'}
+                    {language === 'fr' ? 'Téléphone & Appels directs :' : 'Direct Telephone:'}
                   </span>
                   <p className="mt-0.5">
-                    <a href="tel:+237691087382" className="hover:underline">
-                      +237 691 087 382
+                    <a href="tel:+237691087382" className="hover:underline font-bold text-[#0B0B0C] dark:text-[#F5F1E8]">
+                      691 08 73 82
                     </a>{' '}
-                    <span className="opacity-40">/</span>{' '}
-                    <a href="tel:+237671621140" className="hover:underline opacity-80">
-                      +237 671 621 140
-                    </a>
+                    <span className="text-[11px] opacity-70">(+237 691 087 382)</span>
                   </p>
                 </div>
               </div>
@@ -191,11 +188,11 @@ export const ContactView: React.FC = () => {
                 <Mail className="w-4 h-4 text-[#9C7A4B] shrink-0 mt-0.5" />
                 <div>
                   <span className="font-semibold block text-[#0B0B0C] dark:text-[#F5F1E8]">
-                    {language === 'fr' ? 'E-mail professionnel :' : 'Official Email:'}
+                    {language === 'fr' ? 'E-mail officiel :' : 'Official Email:'}
                   </span>
                   <p className="mt-0.5">
-                    <a href="mailto:contact@juniorzeusstyle.com" className="hover:underline text-[#9C7A4B]">
-                      contact@juniorzeusstyle.com
+                    <a href="mailto:juniortamno13@gmail.com" className="hover:underline text-[#9C7A4B] font-semibold">
+                      juniortamno13@gmail.com
                     </a>
                   </p>
                 </div>
@@ -209,6 +206,79 @@ export const ContactView: React.FC = () => {
                   </span>
                   <p className="mt-0.5">{t(siteSettings.openingHours)}</p>
                 </div>
+              </div>
+
+              {/* Social Channels from Poster */}
+              <div className="flex items-start gap-3 pt-3 border-t border-[#3C2C26]/10 dark:border-[#C8B79C]/10">
+                <Share2 className="w-4 h-4 text-[#9C7A4B] shrink-0 mt-0.5" />
+                <div className="space-y-1.5 w-full">
+                  <span className="font-semibold block text-[#0B0B0C] dark:text-[#F5F1E8]">
+                    {language === 'fr' ? 'Réseaux Sociaux Officiels :' : 'Official Social Networks:'}
+                  </span>
+                  <div className="flex flex-col gap-1.5 text-xs">
+                    <a
+                      href="https://facebook.com/juniorzeusstyle"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline text-[#1877F2] font-medium inline-flex items-center gap-1.5"
+                    >
+                      <span>Facebook : <strong>Junior Zeus style</strong></span>
+                      <ExternalLink className="w-3 h-3 opacity-60" />
+                    </a>
+                    <a
+                      href="https://instagram.com/juniorzeusstyle"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline text-[#E4405F] font-medium inline-flex items-center gap-1.5"
+                    >
+                      <span>Instagram : <strong>Junior Zeus style</strong></span>
+                      <ExternalLink className="w-3 h-3 opacity-60" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Official Flyer Visual Preview Card */}
+          <div className="p-5 bg-gradient-to-br from-[#1C1917] to-[#121110] text-[#F5F1E8] rounded-xs border border-[#9C7A4B]/40 shadow-lg space-y-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-[#9C7A4B]" />
+                <span className="text-[11px] uppercase tracking-widest font-sans font-bold text-[#C8B79C]">
+                  {language === 'fr' ? 'Affiche Officielle' : 'Official Flyer'}
+                </span>
+              </div>
+              <span className="text-[10px] text-[#9C7A4B] font-mono font-semibold">Junior Zeus Style</span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <div className="w-20 h-28 shrink-0 rounded-xs overflow-hidden border border-[#9C7A4B]/40 shadow-md">
+                <img
+                  src="/affiche-junior-zeus.jpg"
+                  alt="Affiche Junior Zeus Style"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="space-y-1.5 text-xs font-sans">
+                <p className="font-editorial text-sm font-semibold text-white">
+                  « Ma passion vous sublimer »
+                </p>
+                <p className="text-[11px] text-[#C8B79C]/80 leading-relaxed">
+                  {language === 'fr'
+                    ? 'Retrouvez l’affiche officielle avec nos 4 prestations phares et coordonnées complètes.'
+                    : 'The official flyer featuring all 4 house disciplines and direct contact info.'}
+                </p>
+                <a
+                  href="/affiche-junior-zeus.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-[11px] text-[#9C7A4B] hover:underline font-semibold pt-1"
+                >
+                  <span>{language === 'fr' ? 'Voir l’affiche en grand format' : 'View full flyer'}</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
             </div>
           </div>

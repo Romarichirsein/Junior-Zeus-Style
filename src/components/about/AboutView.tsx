@@ -63,8 +63,8 @@ export const AboutView: React.FC = () => {
 
           <p className="text-sm sm:text-base font-sans text-[#3C2C26]/80 dark:text-[#C8B79C]/80 leading-relaxed">
             {language === 'fr'
-              ? 'Installé à Yaoundé (Descente Éleveur / Ngousso), l’atelier s’est rapidement distingué par ses créations sur mesure pour cérémonies, réceptions officielles et vestiaire contemporain. Chaque silhouette est un dialogue intime entre les mensurations du client et la main du maître tailleur.'
-              : 'Established in Yaoundé (Descente Éleveur / Ngousso), the atelier distinguishes itself through bespoke attire for ceremonies, galas, and contemporary wardrobes. Every silhouette is an intimate dialogue between patron anatomy and the cutter’s hand.'}
+              ? 'Installé à Yaoundé (Descente Éleveur, face Turbo Distribution Center), l’atelier s’est rapidement imposé par son savoir-faire d’exception : haute couture mixte, création et location de robes de mariées et de soirée, confections africaines raffinées et formation professionnelle des futurs talents.'
+              : 'Based in Yaoundé (Descente Éleveur, opposite Turbo Distribution Center), the atelier has established its reputation through exceptional craft: bespoke couture for men & women, wedding gown tailoring & rental, African heritage ensembles, and professional vocational training.'}
           </p>
 
           <div className="pt-4 flex flex-wrap items-center gap-4">
@@ -133,9 +133,9 @@ export const AboutView: React.FC = () => {
               {language === 'fr' ? 'L’Espace de Confection à Yaoundé' : 'The Tailoring Studio in Yaoundé'}
             </h2>
           </div>
-          <div className="flex items-center gap-2 text-xs font-sans text-[#9C7A4B]">
-            <MapPin className="w-4 h-4" />
-            <span>Descente Éleveur, en face de Turbo</span>
+          <div className="flex items-center gap-2 text-xs font-sans text-[#9C7A4B] font-semibold">
+            <MapPin className="w-4 h-4 shrink-0" />
+            <span>Yaoundé - Descente Éleveur, face Turbo Distribution Center</span>
           </div>
         </div>
 

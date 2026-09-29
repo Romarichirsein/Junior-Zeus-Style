@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApp } from '../../context/AppContext';
-import { Scissors, Sparkles, Crown, HeartHandshake, Wrench, UserCheck, ArrowRight, Clock } from 'lucide-react';
+import { Scissors, Sparkles, Crown, HeartHandshake, Wrench, UserCheck, GraduationCap, ArrowRight, Clock } from 'lucide-react';
 import { motion } from 'motion/react';
 import { LuxuryStarAnimation } from '../lottie/LottieAnimations';
 import { EditorialImage } from '../common/EditorialImage';
@@ -16,6 +16,7 @@ export const ServicesSection: React.FC = () => {
       case 'HeartHandshake': return <HeartHandshake className="w-5 h-5 text-[#9C7A4B]" />;
       case 'Wrench': return <Wrench className="w-5 h-5 text-[#9C7A4B]" />;
       case 'UserCheck': return <UserCheck className="w-5 h-5 text-[#9C7A4B]" />;
+      case 'GraduationCap': return <GraduationCap className="w-5 h-5 text-[#9C7A4B]" />;
       default: return <Scissors className="w-5 h-5 text-[#9C7A4B]" />;
     }
   };

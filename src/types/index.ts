@@ -1,6 +1,6 @@
 export type Language = 'fr' | 'en';
 export type Theme = 'light' | 'dark';
-export type ActivePage = 'accueil' | 'catalogue' | 'services' | 'rendez-vous' | 'a-propos' | 'journal' | 'contact' | 'mentions-legales';
+export type ActivePage = 'accueil' | 'catalogue' | 'services' | 'formation' | 'rendez-vous' | 'a-propos' | 'journal' | 'contact' | 'mentions-legales';
 
 export type CreationStatus = 'disponible' | 'sur_commande' | 'piece_unique' | 'archives';
 

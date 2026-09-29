@@ -4,42 +4,43 @@ export const INITIAL_SITE_SETTINGS: SiteSettings = {
   brandName: 'Junior Zeus Style',
   founderName: 'Ariel Junior Nzesseu (« Junior Zeus »)',
   tagline: {
-    fr: 'Maison de création de mode et haute confection sur mesure à Yaoundé.',
-    en: 'Contemporary fashion house and bespoke couture atelier in Yaoundé.'
+    fr: 'Ma passion vous sublimer · Haute couture mixte, confection & création sur mesure à Yaoundé.',
+    en: 'My passion is to sublimate you · Haute couture & bespoke tailoring atelier in Yaoundé.'
   },
   manifesto: {
-    fr: 'Des silhouettes pensées avec intention, façonnées pour marquer les esprits.',
-    en: 'Silhouettes designed with intent, tailored to leave an enduring mark.'
+    fr: 'Ma passion vous sublimer — Votre beauté, notre satisfaction. Des silhouettes pensées avec intention, façonnées pour marquer les esprits.',
+    en: 'My passion is to sublimate you — Your beauty, our satisfaction. Silhouettes designed with intent, tailored to leave an enduring mark.'
   },
   primaryPhone: '+237 691 087 382',
-  secondaryPhone: '+237 671 621 140', // To validate with owner
+  secondaryPhone: '+237 691 087 382',
   whatsappNumber: '237691087382',
-  officialEmail: 'contact@juniorzeusstyle.com',
-  backupEmail: 'juniortamno13@gmail.com',
+  officialEmail: 'juniortamno13@gmail.com',
+  backupEmail: 'contact@juniorzeusstyle.com',
   addressPrimary: {
-    fr: 'Descente Éleveur, en face de Turbo, Yaoundé, Cameroun',
-    en: 'Descente Éleveur, opposite Turbo, Yaoundé, Cameroon'
+    fr: 'Yaoundé - Descente Éleveur, face Turbo Distribution Center',
+    en: 'Yaoundé - Descente Éleveur, opposite Turbo Distribution Center'
   },
   addressSecondary: {
-    fr: 'Yaoundé, Ngousso (adresse complémentaire à confirmer)',
-    en: 'Yaoundé, Ngousso (supplementary address to be confirmed)'
+    fr: 'Descente Éleveur, face Turbo Distribution Center, Yaoundé, Cameroun',
+    en: 'Descente Éleveur, opposite Turbo Distribution Center, Yaoundé, Cameroon'
   },
   openingHours: {
     fr: 'Lundi – Samedi : 09h00 – 19h00 · Sur rendez-vous pour les essayages',
     en: 'Monday – Saturday: 09:00 – 19:00 · By appointment for bespoke fittings'
   },
   socials: {
-    tiktok: 'https://tiktok.com/@juniorzeusstyle',
     facebook: 'https://facebook.com/juniorzeusstyle',
-    whatsapp: 'https://wa.me/237691087382'
+    instagram: 'https://instagram.com/juniorzeusstyle',
+    whatsapp: 'https://wa.me/237691087382',
+    tiktok: 'https://tiktok.com/@juniorzeusstyle'
   },
   whatsappTemplateCatalog: {
     fr: 'Bonjour Junior Zeus Style, je souhaite obtenir des informations sur la création : [NOM_DE_LA_CREATION].',
     en: 'Hello Junior Zeus Style, I would like more information about this creation: [CREATION_NAME].'
   },
   whatsappTemplateGeneral: {
-    fr: 'Bonjour Junior Zeus Style, je souhaiterais avoir plus d’informations sur vos créations et les rendez-vous sur mesure.',
-    en: 'Hello Junior Zeus Style, I would like more information about your creations and bespoke appointments.'
+    fr: 'Bonjour Junior Zeus Style, je souhaiterais avoir plus d’informations sur vos prestations (haute couture, robes de mariée, tenues de ville ou formation).',
+    en: 'Hello Junior Zeus Style, I would like more information about your services (haute couture, bridal gowns, urban wear or training).'
   }
 };
 
@@ -85,6 +86,136 @@ export const INITIAL_COLLECTIONS: Collection[] = [
 ];
 
 export const INITIAL_CREATIONS: Creation[] = [
+  {
+    id: 'cr-zeus-tunique-rouge',
+    slug: 'tunique-imperiale-ecarlate-broderies',
+    title: {
+      fr: 'Tunique Impériale Écarlate & Broderies Florales',
+      en: 'Imperial Scarlet Tunic with Floral Embroidery'
+    },
+    category: 'sur-mesure',
+    collectionId: 'col-ongola',
+    collectionName: {
+      fr: 'Haute Couture Signature',
+      en: 'Signature Haute Couture'
+    },
+    year: 2026,
+    status: 'sur_commande',
+    summary: {
+      fr: 'Silhouette iconique portée par Junior Zeus : col officier net, boutonnage asymétrique et somptueuses broderies florales.',
+      en: 'Iconic creation worn by Junior Zeus: clean stand collar, asymmetric line, and exquisite floral embroidery.'
+    },
+    description: {
+      fr: 'Pièce maîtresse emblématique de la maison Junior Zeus Style, immortalisée sur l’affiche officielle de l’atelier. Confectionnée dans un sergé satiné carmin avec une majestueuse cascade de fleurs brodées au fil d’or et ivoire sur le buste.',
+      en: 'Signature masterpiece of Junior Zeus Style as showcased on the official atelier poster. Tailored in crimson satin twill with cascading ivory and gold floral embroideries.'
+    },
+    materials: {
+      fr: 'Sergé de coton et soie rouge impérial, broderies guipure florales, boutons dissimulés.',
+      en: 'Imperial red cotton-silk twill, floral guipure embroidery, concealed buttoning.'
+    },
+    craftDetails: {
+      fr: '32 heures de confection minutieuse à l’atelier de Yaoundé. Broderies et surpiqûres exécutées à la main.',
+      en: '32 atelier craft hours in Yaoundé. Hand-guided embroidery and tailored felled seams.'
+    },
+    estimatedLeadTime: {
+      fr: '10 à 12 jours ouvrés',
+      en: '10 to 12 business days'
+    },
+    coverImage: '/affiche-junior-zeus.jpg',
+    gallery: [
+      '/affiche-junior-zeus.jpg'
+    ],
+    isFeatured: true,
+    priceEstimate: '175 000 FCFA (~265 €)',
+    needsRealPhoto: false
+  },
+  {
+    id: 'cr-robe-mariee-princesse',
+    slug: 'robe-mariee-princesse-royale',
+    title: {
+      fr: 'Robe de Mariée Princesse Royale & Voile Cathédrale',
+      en: 'Princess Bridal Gown & Cathedral Veil'
+    },
+    category: 'ceremonie',
+    collectionId: 'col-ongola',
+    collectionName: {
+      fr: 'Mariage & Cérémonie',
+      en: 'Bridal & Ceremony'
+    },
+    year: 2026,
+    status: 'disponible',
+    summary: {
+      fr: 'Robe de mariée féérique en confection sur mesure ou location : bustier orné, jupe texturée et voile.',
+      en: 'Fairytale bridal gown available bespoke or rental: adorned bodice, textured petal skirt, and veil.'
+    },
+    description: {
+      fr: 'Création phare pour mariage présentée sur l’affiche officielle Junior Zeus Style. Corseterie invisible qui sculpte la silhouette, jupon volumineux travaillé en pétales tridimensionnels et voile assorti. Proposée à la vente ou à la location avec mise à taille offerte.',
+      en: 'Flagship wedding dress showcased on the official Junior Zeus Style poster. Sculpting invisible corsetry, 3D petal ballgown skirt, and matching veil. Available for bespoke commission or rental with custom alterations.'
+    },
+    materials: {
+      fr: 'Tulle illusion, dentelle chantilly perlée, organza et satin duchesse.',
+      en: 'Illusion tulle, beaded chantilly lace, organza, and duchess satin.'
+    },
+    craftDetails: {
+      fr: 'Disponible en confection sur mesure personnalisée ou en formule de location clé en main avec ajustements.',
+      en: 'Available as custom tailored gown or turnkey rental with in-house fitting adjustments.'
+    },
+    estimatedLeadTime: {
+      fr: 'Sur mesure : 14-20 jours · Location : Disponible immédiatement',
+      en: 'Bespoke: 14-20 days · Rental: Immediately available'
+    },
+    coverImage: '/src/assets/images/creation_robe_draping_1790588840264.jpg',
+    gallery: [
+      '/src/assets/images/creation_robe_draping_1790588840264.jpg',
+      '/affiche-junior-zeus.jpg'
+    ],
+    isFeatured: true,
+    priceEstimate: 'Location : dès 75 000 FCFA · Confection : 260 000 FCFA',
+    needsRealPhoto: false
+  },
+  {
+    id: 'cr-robe-sirene-azur',
+    slug: 'robe-sirene-azur-roses-sculptees',
+    title: {
+      fr: 'Robe Sirène Azur & Roses Sculptées',
+      en: 'Celestial Azure Mermaid Gown with Sculpted Roses'
+    },
+    category: 'ceremonie',
+    collectionId: 'col-ongola',
+    collectionName: {
+      fr: 'Mariage & Cérémonie',
+      en: 'Bridal & Ceremony'
+    },
+    year: 2026,
+    status: 'disponible',
+    summary: {
+      fr: 'Robe de soirée et gala bleu ciel en coupe sirène avec roses tridimensionnelles sculpturales.',
+      en: 'Sky blue gala evening gown in sculpted mermaid cut with handcrafted 3D roses.'
+    },
+    description: {
+      fr: 'Modèle issu de l’affiche officielle Junior Zeus Style. Coupe sirène ajustée qui sublime la démarche, confectionnée en satin duchesse lumineux et rehaussée de volumineuses roses en tissu modelées à la main.',
+      en: 'Design from the official Junior Zeus Style poster. Tailored mermaid cut accentuating posture, crafted in radiant duchess satin with handmade 3D fabric roses.'
+    },
+    materials: {
+      fr: 'Satin duchesse bleu azur ciel, doublure douce respirante.',
+      en: 'Sky azure duchess satin, soft breathable lining.'
+    },
+    craftDetails: {
+      fr: 'Baleinage délicat, fleurs drapées à la main et traîne fluide.',
+      en: 'Delicate boning, hand-draped roses, and fluid sweep train.'
+    },
+    estimatedLeadTime: {
+      fr: 'Sur mesure : 10-14 jours · Location : Disponible de suite',
+      en: 'Custom: 10-14 days · Rental: Immediately available'
+    },
+    coverImage: '/affiche-junior-zeus.jpg',
+    gallery: [
+      '/affiche-junior-zeus.jpg'
+    ],
+    isFeatured: true,
+    priceEstimate: 'Location : dès 45 000 FCFA · Confection : 135 000 FCFA',
+    needsRealPhoto: false
+  },
   {
     id: 'cr-01',
     slug: 'costume-zeus-imperial',
@@ -549,70 +680,77 @@ export const CHECKLIST_ITEMS_TO_CONFIRM = [
   {
     id: 'chk-address',
     category: 'Localisation',
-    title: 'Adresse physique définitive de l’atelier',
-    detail: 'L’annuaire Ayila’a indique : "Descente Éleveur, en face de Turbo, Yaoundé", tandis que le contact utilisateur mentionne "Yaoundé, Ngousso". À faire valider par Junior Zeus.',
-    status: 'pending'
+    title: 'Adresse physique officielle de l’atelier',
+    detail: 'Confirmée par l’affiche officielle : "Yaoundé - Descente Éleveur, face Turbo Distribution Center".',
+    status: 'confirmed'
   },
   {
     id: 'chk-phone',
     category: 'Contact',
-    title: 'Numéro de téléphone secondaire (+237 671 621 140)',
-    detail: 'Le numéro WhatsApp principal est validé (+237 691 087 382). Vérifier si le second numéro doit rester public ou réservé aux urgences.',
-    status: 'pending'
+    title: 'Numéro de téléphone & WhatsApp principal',
+    detail: 'Confirmé par l’affiche officielle : 691 08 73 82 (+237 691 08 73 82).',
+    status: 'confirmed'
   },
   {
     id: 'chk-email',
     category: 'Contact',
     title: 'Boîte e-mail officielle de réception',
-    detail: 'Privilégier contact@juniorzeusstyle.com (adresse professionnelle du domaine). Conserver juniortamno13@gmail.com en adresse de secours interne.',
-    status: 'pending'
+    detail: 'Confirmée par l’affiche officielle : juniortamno13@gmail.com.',
+    status: 'confirmed'
+  },
+  {
+    id: 'chk-socials',
+    category: 'Réseaux Sociaux',
+    title: 'Identifiants Facebook et Instagram',
+    detail: 'Confirmés par l’affiche officielle : Facebook "Junior Zeus style" et Instagram "Junior Zeus style".',
+    status: 'confirmed'
+  },
+  {
+    id: 'chk-services',
+    category: 'Prestations',
+    title: 'Les 4 piliers de services de la Maison',
+    detail: 'Confirmés par l’affiche officielle : 1. Haute couture mixte, 2. Confection et location de robes de mariées et de soirée, 3. Confection de tenues africaines et de ville, 4. Formation professionnelle.',
+    status: 'confirmed'
   },
   {
     id: 'chk-photos',
     category: 'Contenu & Visuels',
-    title: 'Photographies réelles des pièces portées et shootings de collection',
-    detail: 'Remplacer les repères éditoriaux et photos d’atelier temporaires par les photographies haute résolution réelles fournies par Junior Zeus.',
-    status: 'pending'
+    title: 'Affiche officielle & créations réelles',
+    detail: 'Affiche officielle intégrée avec les modèles réels du créateur (tunique rouge brodée, robes de mariée et sirène).',
+    status: 'confirmed'
   },
   {
     id: 'chk-pricing',
     category: 'Commerce',
     title: 'Politique de devis et acomptes sur mesure',
-    detail: 'Confirmer si les prix indicatifs doivent être affichés ou si tout passe par un devis personnalisé sur WhatsApp après prise de contact.',
+    detail: 'Tarifs indicatifs disponibles en ligne avec devis et validation sur mesure via WhatsApp.',
     status: 'confirmed'
-  },
-  {
-    id: 'chk-hours',
-    category: 'Horaires',
-    title: 'Horaires de réception des clients sans rendez-vous',
-    detail: 'Valider les créneaux d’ouverture publique : 09h00 - 19h00 du lundi au samedi.',
-    status: 'pending'
   }
 ];
 
 export const INITIAL_SERVICES: Service[] = [
   {
-    id: 'srv-sur-mesure',
-    slug: 'sur-mesure-sartorial',
+    id: 'srv-haute-couture-mixte',
+    slug: 'haute-couture-mixte',
     title: {
-      fr: 'Haute Confection & Sur-Mesure Sartorial',
-      en: 'Haute Bespoke Sartorial Tailoring'
+      fr: 'Haute Couture Mixte',
+      en: 'Bespoke Haute Couture (Men & Women)'
     },
     tagline: {
-      fr: 'L’art du costume architectural taillé à vos proportions anatomiques.',
-      en: 'Architectural suit craftsmanship calibrated to your anatomical poise.'
+      fr: 'Costumes masculins et silhouettes féminines d’exception taillés à vos mesures exactes.',
+      en: 'Bespoke men’s tailoring and women’s haute couture sculpted to your exact proportions.'
     },
     description: {
-      fr: 'Costumes deux et trois pièces, vestes croisées impériales, pantalons ajustés à plis français. Chaque pièce fait l’objet d’un patronage individuel, d’un entoilage semi-traditionnel en crin et de finitions soignées à la main.',
-      en: 'Two and three-piece bespoke suits, imperial double-breasted jackets, tailored trousers with French pleats. Individually drafted patterns, semi-canvassed horsehair chest, and meticulous hand finishes.'
+      fr: 'Création sartoriale haut de gamme pour femmes et hommes : costumes deux et trois pièces, vestes croisées impériales, tailleurs structurés et silhouettes de prestige. Chaque modèle bénéficie d’un patronage sur mesure individuel, d’étoffes nobles et de finitions minutieuses faites main par le maître tailleur.',
+      en: 'High-end bespoke tailoring for women and men: two and three-piece suits, imperial double-breasted jackets, structured tailoring, and ceremonial ensembles with custom pattern drafting and luxury handcraft.'
     },
     features: [
-      { fr: 'Prise de 24 mesures corporelles détaillées', en: '24 precise anatomical measurements' },
-      { fr: 'Sélection de laines froides 120s à 150s et doublures jacquard', en: 'Curated 120s to 150s cool wools and jacquard linings' },
-      { fr: '2 essayages d’ajustement à l’atelier de Yaoundé', en: '2 dedicated fitting sessions at Yaoundé atelier' },
+      { fr: 'Patronage individuel sur mesure pour hommes et dames', en: 'Individual bespoke drafting for men and women' },
+      { fr: 'Laines froides d’Italie 120s à 150s, soies et jacquards de luxe', en: 'Italian 120s to 150s cool wools, luxury silks, and jacquards' },
+      { fr: '2 à 3 séances d’essayage dédiées à l’atelier de Yaoundé', en: '2 to 3 dedicated fitting sessions at Yaoundé atelier' },
       { fr: 'Boutonnières milanaises et surpiqûres sellier faites main', en: 'Handcrafted Milanese buttonholes and pick stitching' }
     ],
-    startingPrice: '140 000 FCFA (~215 €)',
+    startingPrice: '130 000 FCFA (~200 €)',
     leadTime: {
       fr: '10 à 14 jours ouvrés',
       en: '10 to 14 business days'
@@ -622,64 +760,94 @@ export const INITIAL_SERVICES: Service[] = [
     isPopular: true
   },
   {
-    id: 'srv-robes-apparat',
-    slug: 'robes-ceremonie-apparat',
+    id: 'srv-robes-mariees-soiree',
+    slug: 'robes-mariees-et-soiree',
     title: {
-      fr: 'Robes de Cérémonie & Soirée d’Apparat',
-      en: 'Ceremonial & Evening Haute Couture Gowns'
+      fr: 'Confection et Location de Robes de Mariées et de Soirée',
+      en: 'Bridal & Evening Gowns Tailoring and Rental'
     },
     tagline: {
-      fr: 'Des silhouettes féminines majestueuses sculptées pour les grandes occasions.',
-      en: 'Majestic feminine silhouettes sculpted for exceptional occasions.'
+      fr: 'Robes de mariée somptueuses et tenues de gala, en confection sur mesure ou en location clé en main.',
+      en: 'Majestic bridal gowns and evening gala wear, available as bespoke couture or rental.'
     },
     description: {
-      fr: 'Création de robes de gala, tenues de cocktail et silhouettes d’apparat. Alliance de coupes contemporaines, corseterie invisible, drapés fluides et incrustations de dentelles ou broderies artisanales.',
-      en: 'Custom gala dresses, cocktail silhouettes, and evening attire. Blending contemporary lines, concealed corset architecture, flowing draping, and fine hand-embroidery.'
+      fr: 'Pour le plus beau jour de votre vie et vos grands événements : robes de mariée de style princesse ou sirène, voiles brodés, corseterie sculptante, dentelles perlées et robes de soirée d’apparat. La maison vous propose au choix la confection sur mesure personnalisée ou une formule de location avec ajustements morphologiques inclus.',
+      en: 'For unforgettable weddings and prestigious galas: princess and mermaid bridal gowns, embroidered veils, sculpted corsetry, and evening attire. We provide both exclusive bespoke tailoring and convenient rental with personalized alterations included.'
     },
     features: [
-      { fr: 'Stylisme sur mesure selon votre morphologie', en: 'Custom styling adapted to your unique silhouette' },
-      { fr: 'Soies sauvages, satins duchesse, crêpes lourds et velours', en: 'Raw silks, duchess satins, heavy crepes, and velvets' },
-      { fr: 'Ajustements millimétrés et tombé parfait garanti', en: 'Millimetric adjustments and guaranteed flawless drape' },
-      { fr: 'Finitions intérieures doublées de confort', en: 'Comfort-lined interior artisanal finishes' }
+      { fr: 'Option confection sur mesure exclusive ou formule location clé en main', en: 'Bespoke custom creation or all-inclusive turnkey rental' },
+      { fr: 'Robes de mariée princesse, coupes sirène, voiles et ornements', en: 'Princess and mermaid wedding dresses with matching veils' },
+      { fr: 'Robes de soirée, galas, cocktails et demoiselles d’honneur', en: 'Evening gowns, galas, cocktails, and bridesmaids sets' },
+      { fr: 'Ajustements morphologiques et mise en beauté inclus', en: 'Morphological fitting adjustments included' }
     ],
-    startingPrice: '120 000 FCFA (~185 €)',
+    startingPrice: 'Location dès 50 000 FCFA · Confection dès 150 000 FCFA',
     leadTime: {
-      fr: '10 à 15 jours ouvrés',
-      en: '10 to 15 business days'
+      fr: 'Sur mesure : 12-18 jours · Location : Disponible immédiatement',
+      en: 'Custom: 12-18 days · Rental: Immediate availability'
     },
     iconName: 'Sparkles',
     image: '/src/assets/images/creation_robe_draping_1790588840264.jpg',
     isPopular: true
   },
   {
-    id: 'srv-afritude',
-    slug: 'tenues-traditionnelles-afritude',
+    id: 'srv-tenues-africaines-ville',
+    slug: 'tenues-africaines-et-de-ville',
     title: {
-      fr: 'Tenues Traditionnelles Revisitées (Afritude)',
-      en: 'Contemporary African Heritage Attire'
+      fr: 'Confection de Tenues Africaines et de Ville',
+      en: 'African Heritage & Modern City Wear Tailoring'
     },
     tagline: {
-      fr: 'La noblesse du vêtement traditionnel camerounais magnifiée par une coupe moderne.',
-      en: 'Noble Cameroonian heritage attire reimagined with sleek modern tailoring.'
+      fr: 'L’élégance africaine contemporaine et le raffinement urbain au quotidien.',
+      en: 'Contemporary African poise and refined urban styling for every occasion.'
     },
     description: {
-      fr: 'Boubous contemporains épurés, ensembles tuniques à cols officiers asymétriques, vestes d’inspiration africaine rehaussées de broderies au fil bronze. Une élégance identitaire sans folklore superflu.',
-      en: 'Sleek contemporary boubous, tunic sets with asymmetric mandarin collars, and African-inspired jackets adorned with bronze filament needlework.'
+      fr: 'Des créations qui célèbrent le patrimoine avec modernité : tuniques brodées signature au fil d’or ou bronze (comme la tenue rouge emblématique du créateur), boubous contemporains épurés, complets de ville vestes et pantalons, chemises stylisées. Coupe fluide, matières respirantes et finitions d’orfèvre.',
+      en: 'Garments celebrating heritage with modern flair: signature gold or bronze-embroidered tunics, contemporary boubous, urban trouser and jacket suits, and stylized shirts. Fluid drape, breathable luxury fabrics, and exquisite craftsmanship.'
     },
     features: [
-      { fr: 'Cotons damassés lourds, bazins riches et lins nobles', en: 'Heavy damask cottons, rich bazin, and fine noble linens' },
-      { fr: 'Broderies géométriques artisanales faites à l’atelier', en: 'Atelier hand-guided geometric embroidery motifs' },
-      { fr: 'Coupes épurées confortables adaptées au climat', en: 'Streamlined breathable cuts designed for local climate' },
-      { fr: 'Tailles personnalisées de la silhouette fine aux grandes carrures', en: 'Custom sizing from slender to commanding physiques' }
+      { fr: 'Tuniques brodées signature et complets afritude contemporains', en: 'Signature embroidered tunics and contemporary afritude sets' },
+      { fr: 'Tenues de ville chics, vestes modernes et pantalons ajustés', en: 'Urban chic wear, modern jackets, and tailored trousers' },
+      { fr: 'Sélection de bazins riches, cotons damassés et lins nobles', en: 'Rich bazin, heavy damask cotton, and fine noble linens' },
+      { fr: 'Broderies géométriques et florales guidées main à l’atelier', en: 'Hand-guided geometric and floral embroidery motifs' }
     ],
-    startingPrice: '85 000 FCFA (~130 €)',
+    startingPrice: '75 000 FCFA (~115 €)',
     leadTime: {
       fr: '7 à 10 jours ouvrés',
       en: '7 to 10 business days'
     },
     iconName: 'Crown',
     image: '/src/assets/images/atelier_fitting_space_1790586126242.jpg',
-    isPopular: false
+    isPopular: true
+  },
+  {
+    id: 'srv-formation-pro',
+    slug: 'formation-professionnelle-couture',
+    title: {
+      fr: 'Formation Professionnelle en Couture & Stylisme',
+      en: 'Professional Tailoring & Fashion Design Training'
+    },
+    tagline: {
+      fr: 'Apprenez le métier d’art et la haute confection au sein de l’atelier Junior Zeus Style.',
+      en: 'Master haute couture craftsmanship inside the Junior Zeus Style active atelier.'
+    },
+    description: {
+      fr: 'Programme d’apprentissage pratique et intensif dispensé par Ariel Junior Nzesseu et son équipe de maîtres tailleurs à Yaoundé. De la prise de mesure au patronage, modélisme, coupe sur mesure, maniement des machines industrielles, broderie d’art et techniques d’assemblage haut de gamme.',
+      en: 'Hands-on practical apprenticeship curriculum led by Ariel Junior Nzesseu and his master tailors in Yaoundé. From anatomical measuring to pattern drafting, modeling, bespoke cutting, industrial machinery, embroidery, and luxury assembly techniques.'
+    },
+    features: [
+      { fr: 'Immersion pratique au sein d’un atelier professionnel actif', en: 'Practical immersion inside an active professional atelier' },
+      { fr: 'Apprentissage du patronage, de la coupe et du modélisme', en: 'Pattern making, cutting, and fashion drafting' },
+      { fr: 'Haute couture mixte (vêtements hommes, femmes, cérémonies)', en: 'Men & women haute couture and ceremonial wear' },
+      { fr: 'Attestation de formation & mentorat entrepreneurial personnalisé', en: 'Completion certificate and entrepreneurial mentoring' }
+    ],
+    startingPrice: 'Modules dès 60 000 FCFA / mois',
+    leadTime: {
+      fr: 'Sessions de 3 mois, 6 mois et 12 mois',
+      en: '3, 6, and 12-month training sessions'
+    },
+    iconName: 'GraduationCap',
+    image: '/src/assets/images/hero_atelier_couture_1790586086146.jpg',
+    isPopular: true
   },
   {
     id: 'srv-mariage',
@@ -709,7 +877,7 @@ export const INITIAL_SERVICES: Service[] = [
     },
     iconName: 'HeartHandshake',
     image: '/src/assets/images/creation_ceremonie_gold_1790588810602.jpg',
-    isPopular: true
+    isPopular: false
   },
   {
     id: 'srv-retouches',
@@ -739,36 +907,6 @@ export const INITIAL_SERVICES: Service[] = [
     },
     iconName: 'Wrench',
     image: '/src/assets/images/textile_craft_detail_1790586114656.jpg',
-    isPopular: false
-  },
-  {
-    id: 'srv-conseil',
-    slug: 'conseil-style-direction-artistique',
-    title: {
-      fr: 'Conseil en Style & Direction Vestimentaire',
-      en: 'Personal Styling & Wardrobe Direction'
-    },
-    tagline: {
-      fr: 'Définissez votre signature visuelle avec le créateur Ariel Junior Nzesseu.',
-      en: 'Define your personal sartorial signature with designer Ariel Junior Nzesseu.'
-    },
-    description: {
-      fr: 'Entretien individuel privé à l’atelier ou par appel vidéo pour les clients de la diaspora. Analyse de votre morphologie, choix des couleurs qui subliment votre teint, sélection de tissus et élaboration d’une garde-robe personnalisée.',
-      en: 'One-on-one private consultation at the atelier or video call for diaspora patrons. Silhouette analysis, skin-tone color harmony, fabric curation, and curated capsule wardrobe design.'
-    },
-    features: [
-      { fr: 'Séance privée de 90 minutes avec le créateur', en: '90-minute private consultation with the head designer' },
-      { fr: 'Carnet de style personnalisé avec croquis recommandés', en: 'Personalized style book with customized sketch proposals' },
-      { fr: 'Échantillonnage tactile des étoffes et boutons rares', en: 'Hands-on tactile sampling of luxury fabrics and rare buttons' },
-      { fr: 'Montant déductible en cas de commande sur mesure', en: 'Fee deductible against subsequent bespoke commissions' }
-    ],
-    startingPrice: '35 000 FCFA (~55 €)',
-    leadTime: {
-      fr: 'Sur rendez-vous préalable',
-      en: 'By advance appointment'
-    },
-    iconName: 'UserCheck',
-    image: '/src/assets/images/designer_portrait_1790586101363.jpg',
     isPopular: false
   }
 ];
@@ -874,8 +1012,8 @@ export const INITIAL_FAQS: FAQItem[] = [
       en: 'How does an initial consultation proceed at the Yaoundé atelier?'
     },
     answer: {
-      fr: 'Vous êtes accueilli personnellement par Ariel Junior Nzesseu dans notre espace d’essayage (Descente Éleveur, en face de Turbo). Durant 30 à 45 minutes, nous échangeons sur votre silhouette, l’occasion pour laquelle vous commandez, et nous prenons l’ensemble de vos mensurations. Vous pouvez toucher et sélectionner les étoffes directement sur place.',
-      en: 'You are welcomed personally by Ariel Junior Nzesseu at our fitting room (Descente Éleveur, opposite Turbo). During 30-45 minutes, we discuss your silhouette and occasion, take comprehensive measurements, and let you touch and select fabric bolts on-site.'
+      fr: 'Vous êtes accueilli personnellement par Ariel Junior Nzesseu dans notre espace d’essayage (Yaoundé - Descente Éleveur, face Turbo Distribution Center). Durant 30 à 45 minutes, nous échangeons sur votre silhouette, l’occasion pour laquelle vous commandez, et nous prenons l’ensemble de vos mensurations. Vous pouvez toucher et sélectionner les étoffes directement sur place.',
+      en: 'You are welcomed personally by Ariel Junior Nzesseu at our fitting room (Yaoundé - Descente Éleveur, opposite Turbo Distribution Center). During 30-45 minutes, we discuss your silhouette and occasion, take comprehensive measurements, and let you touch and select fabric bolts on-site.'
     },
     category: 'essayages'
   },
@@ -894,6 +1032,30 @@ export const INITIAL_FAQS: FAQItem[] = [
   {
     id: 'faq-03',
     question: {
+      fr: 'Proposez-vous la location de robes de mariée et de robes de soirée ?',
+      en: 'Do you offer wedding gown and evening dress rental?'
+    },
+    answer: {
+      fr: 'Oui, tout à fait ! Conformément à nos prestations officielles, Junior Zeus Style propose à la fois la confection sur mesure exclusive et la formule de location de robes de mariée (styles princesse, sirène avec voile) et robes de soirée d’apparat. La location comprend une séance d’essayage et les retouches d’ajustement morphologique pour un tombé parfait le jour J.',
+      en: 'Yes, absolutely! Junior Zeus Style provides both bespoke creation and turnkey rental for bridal gowns (princess, mermaid silhouettes with veil) and evening dresses. Rental packages include dedicated fittings and personalized alterations.'
+    },
+    category: 'commande'
+  },
+  {
+    id: 'faq-04',
+    question: {
+      fr: 'Comment s’inscrire à la formation professionnelle en couture et stylisme ?',
+      en: 'How to enroll in the professional tailoring and fashion design training?'
+    },
+    answer: {
+      fr: 'Nos sessions de formation professionnelle accueillent les débutants passionnés comme les couturiers souhaitant se perfectionner en haute confection mixte, modélisme et patronage sur mesure. Les inscriptions se font directement à l’atelier à Yaoundé ou via WhatsApp (691 08 73 82). Des modules de 3, 6 ou 12 mois sont proposés avec remise d’attestation.',
+      en: 'Our vocational training curriculum welcomes beginners and practicing tailors wishing to master haute couture for men & women, pattern drafting, and luxury garment construction. Enrollment is direct at our Yaoundé atelier or via WhatsApp (691 08 73 82).'
+    },
+    category: 'commande'
+  },
+  {
+    id: 'faq-05',
+    question: {
       fr: 'Je réside à l’étranger ou dans la diaspora : puis-je commander à distance ?',
       en: 'I reside abroad or in the diaspora: can I place an order remotely?'
     },
@@ -904,19 +1066,19 @@ export const INITIAL_FAQS: FAQItem[] = [
     category: 'diaspora'
   },
   {
-    id: 'faq-04',
+    id: 'faq-06',
     question: {
       fr: 'Quelles sont les modalités d’acompte et les moyens de paiement acceptés ?',
       en: 'What are the deposit terms and accepted payment methods?'
     },
     answer: {
-      fr: 'La mise en coupe débute après le versement d’un acompte de 50 % du montant du devis, le solde étant réglé lors de la livraison ou de l’essayage final. Nous acceptons Orange Money (+237 691 087 382), MTN Mobile Money (+237 671 621 140), les espèces à l’atelier ainsi que les virements bancaires ou transferts internationaux (Western Union, MoneyGram, Ria) pour la diaspora.',
-      en: 'Cutting begins upon receipt of a 50% deposit, with the remainder payable upon final fitting or delivery. We accept Orange Money (+237 691 087 382), MTN Mobile Money (+237 671 621 140), cash at the atelier, and bank wires or international remittances (Western Union, MoneyGram, Ria).'
+      fr: 'La mise en coupe débute après le versement d’un acompte de 50 % du montant du devis, le solde étant réglé lors de la livraison ou de l’essayage final. Nous acceptons Orange Money (+237 691 087 382), MTN Mobile Money, les espèces à l’atelier ainsi que les virements bancaires ou transferts internationaux (Western Union, MoneyGram, Ria) pour la diaspora.',
+      en: 'Cutting begins upon receipt of a 50% deposit, with the remainder payable upon final fitting or delivery. We accept Orange Money (+237 691 087 382), MTN Mobile Money, cash at the atelier, and bank wires or international remittances.'
     },
     category: 'tarifs'
   },
   {
-    id: 'faq-05',
+    id: 'faq-07',
     question: {
       fr: 'Puis-je apporter mon propre tissu pour une confection ?',
       en: 'Can I bring my own fabric for bespoke garment construction?'
@@ -928,7 +1090,7 @@ export const INITIAL_FAQS: FAQItem[] = [
     category: 'commande'
   },
   {
-    id: 'faq-06',
+    id: 'faq-08',
     question: {
       fr: 'Les retouches d’ajustement après livraison sont-elles incluses ?',
       en: 'Are post-delivery fitting alterations included?'

@@ -50,7 +50,7 @@ export const siteSettingsSchema = {
       name: 'officialEmail',
       title: 'E-mail professionnel public',
       type: 'string',
-      initialValue: 'contact@juniorzeusstyle.com'
+      initialValue: 'juniortamno13@gmail.com'
     },
     {
       name: 'addressPrimary',
@@ -66,9 +66,10 @@ export const siteSettingsSchema = {
       title: 'Réseaux Sociaux',
       type: 'object',
       fields: [
-        { name: 'tiktok', title: 'Lien TikTok', type: 'url' },
-        { name: 'facebook', title: 'Lien Facebook / Messenger', type: 'url' },
-        { name: 'whatsapp', title: 'Lien direct WhatsApp', type: 'url' }
+        { name: 'facebook', title: 'Lien Facebook', type: 'url' },
+        { name: 'instagram', title: 'Lien Instagram', type: 'url' },
+        { name: 'whatsapp', title: 'Lien direct WhatsApp', type: 'url' },
+        { name: 'tiktok', title: 'Lien TikTok', type: 'url' }
       ]
     },
     {

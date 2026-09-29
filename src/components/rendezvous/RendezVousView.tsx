@@ -98,7 +98,7 @@ export const RendezVousView: React.FC = () => {
       fullName: '',
       phone: '',
       city: 'Yaoundé',
-      serviceType: 'Haute Confection & Sur-Mesure Sartorial',
+      serviceType: 'Haute Couture Mixte',
       budget: '150 000 – 300 000 FCFA',
       preferredDate: '',
       timeSlot: 'Après-midi (13h – 16h)',
@@ -107,12 +107,12 @@ export const RendezVousView: React.FC = () => {
   };
 
   const serviceOptions = [
-    { fr: 'Haute Confection & Sur-Mesure Sartorial', en: 'Haute Bespoke Sartorial Tailoring' },
-    { fr: 'Robes de Cérémonie & Soirée d’Apparat', en: 'Ceremonial & Evening Haute Couture Gowns' },
-    { fr: 'Tenues Traditionnelles Revisitées (Afritude)', en: 'Contemporary African Heritage Attire' },
+    { fr: 'Haute Couture Mixte (Sur mesure Homme & Femme)', en: 'Bespoke Haute Couture (Men & Women)' },
+    { fr: 'Confection et Location de Robes de Mariées et de Soirée', en: 'Bridal & Evening Gown Tailoring and Rental' },
+    { fr: 'Confection de Tenues Africaines et de Ville', en: 'African Heritage & Modern City Wear' },
+    { fr: 'Formation Professionnelle (Couture, Modélisme & Stylisme)', en: 'Professional Couture & Fashion Design Training' },
     { fr: 'Mariages & Habillage de Cortège', en: 'Weddings & Groom Party Tailoring' },
     { fr: 'Retouches Haut de Gamme & Remise à Mesure', en: 'Master Alterations & Bespoke Resizing' },
-    { fr: 'Conseil en Style & Direction Vestimentaire', en: 'Personal Styling & Wardrobe Direction' },
     { fr: 'Autre projet sur mesure', en: 'Other bespoke commission' }
   ];
 
@@ -429,8 +429,8 @@ export const RendezVousView: React.FC = () => {
               </div>
             </div>
             <div className="text-xs font-sans text-[#3C2C26]/75 dark:text-[#C8B79C]/75 pt-2 border-t border-[#3C2C26]/10 dark:border-[#C8B79C]/10">
-              <span className="font-semibold">{language === 'fr' ? 'Numéro secondaire : ' : 'Secondary line: '}</span>
-              <a href="tel:+237671621140" className="hover:underline">+237 671 621 140</a>
+              <span className="font-semibold">{language === 'fr' ? 'E-mail officiel : ' : 'Official email: '}</span>
+              <a href="mailto:juniortamno13@gmail.com" className="hover:underline text-[#9C7A4B] font-medium">juniortamno13@gmail.com</a>
             </div>
           </div>
 
@@ -444,8 +444,8 @@ export const RendezVousView: React.FC = () => {
               Yaoundé, Cameroun
             </p>
             <p className="text-xs font-sans text-[#3C2C26]/85 dark:text-[#C8B79C]/85 leading-relaxed">
-              Descente Éleveur, en face de Turbo Distribution, Yaoundé.<br />
-              <span className="italic opacity-80">(Zone Ngousso à proximité)</span>
+              Yaoundé - Descente Éleveur, face Turbo Distribution Center.<br />
+              <span className="italic opacity-80">(Boutique & atelier de haute confection)</span>
             </p>
           </div>
 
