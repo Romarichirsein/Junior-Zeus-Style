@@ -61,7 +61,7 @@ export const INITIAL_COLLECTIONS: Collection[] = [
       fr: 'Une exploration des lignes impériales et de la posture contemporaine camerounaise, alliant laines peignées et finitions brodées au fil bronze.',
       en: 'An exploration of imperial lines and contemporary Cameroonian posture, blending worsted wools with bronze-threaded artisanal finishes.'
     },
-    coverImage: '/src/assets/images/hero_atelier_couture_1790586086146.jpg',
+    coverImage: encodeURI('/Junior Zeus Style/hero.jpg'),
     piecesCount: 6
   },
   {
@@ -80,395 +80,1523 @@ export const INITIAL_COLLECTIONS: Collection[] = [
       fr: 'Costumes de cérémonie, vestes asymétriques et tenues de prestige taillées sur les mensurations précises de chaque client.',
       en: 'Ceremonial suits, asymmetric lapel jackets, and prestige attire cut to the precise anatomical measurements of each patron.'
     },
-    coverImage: '/src/assets/images/atelier_fitting_space_1790586126242.jpg',
+    coverImage: encodeURI('/Junior Zeus Style/hero 1.jpg'),
     piecesCount: 8
   }
 ];
 
 export const INITIAL_CREATIONS: Creation[] = [
   {
-    id: 'cr-zeus-tunique-rouge',
-    slug: 'tunique-imperiale-ecarlate-broderies',
+    id: "cr-mariee-reine-astrid",
+    slug: "robe-mariee-reine-astrid",
     title: {
-      fr: 'Tunique Impériale Écarlate & Broderies Florales',
-      en: 'Imperial Scarlet Tunic with Floral Embroidery'
+      fr: "Robe de Mariée Princesse Impériale \"Reine Astrid\"",
+      en: "Imperial Princess Bridal Gown \"Queen Astrid\""
     },
-    category: 'sur-mesure',
-    collectionId: 'col-ongola',
+    category: "robe-mariee",
+    collectionId: "col-ongola",
     collectionName: {
-      fr: 'Haute Couture Signature',
-      en: 'Signature Haute Couture'
+      fr: "Haute Cérémonie Nuptiale",
+      en: "Haute Bridal Ceremony"
     },
     year: 2026,
-    status: 'sur_commande',
+    status: "disponible",
     summary: {
-      fr: 'Silhouette iconique portée par Junior Zeus : col officier net, boutonnage asymétrique et somptueuses broderies florales.',
-      en: 'Iconic creation worn by Junior Zeus: clean stand collar, asymmetric line, and exquisite floral embroidery.'
+      fr: "Robe de mariée grand volume féerique avec bustier finement perlé et traîne royale.",
+      en: "Fairytale royal ballgown with intricately beaded corset bodice and majestic chapel train."
     },
     description: {
-      fr: 'Pièce maîtresse emblématique de la maison Junior Zeus Style, immortalisée sur l’affiche officielle de l’atelier. Confectionnée dans un sergé satiné carmin avec une majestueuse cascade de fleurs brodées au fil d’or et ivoire sur le buste.',
-      en: 'Signature masterpiece of Junior Zeus Style as showcased on the official atelier poster. Tailored in crimson satin twill with cascading ivory and gold floral embroideries.'
+      fr: "Confection d’exception pensée pour sublimer la mariée lors de son grand jour. Corset structuré baleiné à la main épousant parfaitement la taille, orné de dentelle perlée et de cristaux scintillants, s’ouvrant sur une jupe monumentale en organza et tulle de soie.",
+      en: "Exceptional creation tailored to magnify the bride on her unforgettable day. Hand-boned corset contouring the waistline, embellished with beaded lace and crystals, cascading into a sweeping organza and silk tulle skirt."
     },
     materials: {
-      fr: 'Sergé de coton et soie rouge impérial, broderies guipure florales, boutons dissimulés.',
-      en: 'Imperial red cotton-silk twill, floral guipure embroidery, concealed buttoning.'
+      fr: "Dentelle de Calais perlée main, tulle de soie multicouche, organza satiné, doublure coton peigné.",
+      en: "Hand-beaded Calais lace, multi-tiered silk tulle, satin organza, breathable combed cotton lining."
     },
     craftDetails: {
-      fr: '32 heures de confection minutieuse à l’atelier de Yaoundé. Broderies et surpiqûres exécutées à la main.',
-      en: '32 atelier craft hours in Yaoundé. Hand-guided embroidery and tailored felled seams.'
+      fr: "65 heures de main-d’œuvre d’art à l’atelier de Yaoundé. Finitions coutures anglaises et baleinage haute précision.",
+      en: "65 hours of master craft in our Yaoundé atelier. French seams and high-precision anatomical boning."
     },
     estimatedLeadTime: {
-      fr: '10 à 12 jours ouvrés',
-      en: '10 to 12 business days'
+      fr: "Sur mesure : 15 à 21 jours ouvrés · Location : Disponible immédiatement avec retouches",
+      en: "Bespoke: 15 to 21 business days · Rental: Available immediately with in-house fitting"
     },
-    coverImage: '/affiche-junior-zeus.jpg',
+    coverImage: "/Junior%20Zeus%20Style/robe%20marriage/494678242_1262847085847760_4109750348111974452_n.jpg",
     gallery: [
-      '/affiche-junior-zeus.jpg'
+      "/Junior%20Zeus%20Style/robe%20marriage/494678242_1262847085847760_4109750348111974452_n.jpg",
+      "/Junior%20Zeus%20Style/robe%20marriage/494695914_1262847289181073_8559951881502044025_n.jpg"
     ],
     isFeatured: true,
-    priceEstimate: '175 000 FCFA (~265 €)',
+    priceEstimate: "Location : 95 000 FCFA · Confection sur mesure : 550 000 FCFA",
     needsRealPhoto: false
   },
   {
-    id: 'cr-robe-mariee-princesse',
-    slug: 'robe-mariee-princesse-royale',
+    id: "cr-mariee-etoile-celeste",
+    slug: "robe-mariee-sirene-etoile-celeste",
     title: {
-      fr: 'Robe de Mariée Princesse Royale & Voile Cathédrale',
-      en: 'Princess Bridal Gown & Cathedral Veil'
+      fr: "Robe Nuptiale Sirène Majestueuse \"Étoile Céleste\"",
+      en: "Majestic Mermaid Bridal Gown \"Celestial Star\""
     },
-    category: 'ceremonie',
-    collectionId: 'col-ongola',
+    category: "robe-mariee",
+    collectionId: "col-ongola",
     collectionName: {
-      fr: 'Mariage & Cérémonie',
-      en: 'Bridal & Ceremony'
+      fr: "Haute Cérémonie Nuptiale",
+      en: "Haute Bridal Ceremony"
     },
     year: 2026,
-    status: 'disponible',
+    status: "disponible",
     summary: {
-      fr: 'Robe de mariée féérique en confection sur mesure ou location : bustier orné, jupe texturée et voile.',
-      en: 'Fairytale bridal gown available bespoke or rental: adorned bodice, textured petal skirt, and veil.'
+      fr: "Coupe sirène galbante soulignant la cambrure avec buste orné de nacre et traîne cathédrale.",
+      en: "Figure-hugging mermaid silhouette highlighting posture with mother-of-pearl bodice and cathedral train."
     },
     description: {
-      fr: 'Création phare pour mariage présentée sur l’affiche officielle Junior Zeus Style. Corseterie invisible qui sculpte la silhouette, jupon volumineux travaillé en pétales tridimensionnels et voile assorti. Proposée à la vente ou à la location avec mise à taille offerte.',
-      en: 'Flagship wedding dress showcased on the official Junior Zeus Style poster. Sculpting invisible corsetry, 3D petal ballgown skirt, and matching veil. Available for bespoke commission or rental with custom alterations.'
+      fr: "Une ode à la féminité et à la prestance. Cette robe sirène sculpte la silhouette avec une fluidité remarquable, prolongeant la démarche d’une somptueuse traîne bordée d’appliques florales cousues à la main.",
+      en: "An ode to grace and majesty. This mermaid gown contours the silhouette with remarkable fluidity, extending movement into an opulent train edged with hand-stitched floral appliqués."
     },
     materials: {
-      fr: 'Tulle illusion, dentelle chantilly perlée, organza et satin duchesse.',
-      en: 'Illusion tulle, beaded chantilly lace, organza, and duchess satin.'
+      fr: "Satin mikado ivoire pur, guipure brodée, perles de verre et nacre fine.",
+      en: "Pure ivory mikado satin, embroidered guipure, glass seed pearls and fine mother-of-pearl."
     },
     craftDetails: {
-      fr: 'Disponible en confection sur mesure personnalisée ou en formule de location clé en main avec ajustements.',
-      en: 'Available as custom tailored gown or turnkey rental with in-house fitting adjustments.'
+      fr: "Boutonnage dos à brides recouvertes de satin et découpe princesse ajustée au millimètre.",
+      en: "Loop-fastened satin-covered back buttons and princess seam tailored to anatomical perfection."
     },
     estimatedLeadTime: {
-      fr: 'Sur mesure : 14-20 jours · Location : Disponible immédiatement',
-      en: 'Bespoke: 14-20 days · Rental: Immediately available'
+      fr: "Sur mesure : 18 à 25 jours · Location : Disponible à l’atelier",
+      en: "Bespoke: 18 to 25 days · Rental: Available at the atelier"
     },
-    coverImage: '/src/assets/images/creation_robe_draping_1790588840264.jpg',
+    coverImage: "/Junior%20Zeus%20Style/robe%20marriage/494695914_1262847289181073_8559951881502044025_n.jpg",
     gallery: [
-      '/src/assets/images/creation_robe_draping_1790588840264.jpg',
-      '/affiche-junior-zeus.jpg'
+      "/Junior%20Zeus%20Style/robe%20marriage/494695914_1262847289181073_8559951881502044025_n.jpg"
     ],
     isFeatured: true,
-    priceEstimate: 'Location : dès 75 000 FCFA · Confection : 260 000 FCFA',
+    priceEstimate: "Location : 110 000 FCFA · Confection sur mesure : 620 000 FCFA",
     needsRealPhoto: false
   },
   {
-    id: 'cr-robe-sirene-azur',
-    slug: 'robe-sirene-azur-roses-sculptees',
+    id: "cr-mariee-feerie-ongola",
+    slug: "robe-nuptiale-feerie-ongola",
     title: {
-      fr: 'Robe Sirène Azur & Roses Sculptées',
-      en: 'Celestial Azure Mermaid Gown with Sculpted Roses'
+      fr: "Robe Nuptiale Couture \"Féerie d’Ongola\"",
+      en: "Couture Bridal Gown \"Ongola Reverie\""
     },
-    category: 'ceremonie',
-    collectionId: 'col-ongola',
+    category: "robe-mariee",
+    collectionId: "col-ongola",
     collectionName: {
-      fr: 'Mariage & Cérémonie',
-      en: 'Bridal & Ceremony'
+      fr: "Haute Cérémonie Nuptiale",
+      en: "Haute Bridal Ceremony"
     },
     year: 2026,
-    status: 'disponible',
+    status: "disponible",
     summary: {
-      fr: 'Robe de soirée et gala bleu ciel en coupe sirène avec roses tridimensionnelles sculpturales.',
-      en: 'Sky blue gala evening gown in sculpted mermaid cut with handcrafted 3D roses.'
+      fr: "Décolleté cœur gracieux, corset drapé à la main et jupon vaporeux à volants déstructurés.",
+      en: "Sweetheart neckline, hand-draped corset bodice and ethereal ruffled flowing skirt."
     },
     description: {
-      fr: 'Modèle issu de l’affiche officielle Junior Zeus Style. Coupe sirène ajustée qui sublime la démarche, confectionnée en satin duchesse lumineux et rehaussée de volumineuses roses en tissu modelées à la main.',
-      en: 'Design from the official Junior Zeus Style poster. Tailored mermaid cut accentuating posture, crafted in radiant duchess satin with handmade 3D fabric roses.'
+      fr: "Élégance aérienne et romantique pour les mariages contemporains. Le travail minutieux du drapé met en valeur le port de tête tout en garantissant un confort royal tout au long de la célébration.",
+      en: "Airy romantic sophistication for contemporary weddings. Meticulous hand-draping frames posture while ensuring royal comfort throughout the joyous celebration."
     },
     materials: {
-      fr: 'Satin duchesse bleu azur ciel, doublure douce respirante.',
-      en: 'Sky azure duchess satin, soft breathable lining.'
+      fr: "Mousseline de soie, tulle illusion diamant, baleinage souple et doublure satin.",
+      en: "Silk chiffon, diamond illusion tulle, flexible boning, and satin lining."
     },
     craftDetails: {
-      fr: 'Baleinage délicat, fleurs drapées à la main et traîne fluide.',
-      en: 'Delicate boning, hand-draped roses, and fluid sweep train.'
+      fr: "Drapé asymétrique exécuté sur mannequin bois selon les règles traditionnelles du grand atelier.",
+      en: "Asymmetric drapery constructed on wooden bust form following grand atelier heritage rules."
     },
     estimatedLeadTime: {
-      fr: 'Sur mesure : 10-14 jours · Location : Disponible de suite',
-      en: 'Custom: 10-14 days · Rental: Immediately available'
+      fr: "Sur mesure : 14 à 20 jours ouvrés · Location : Prête à porter avec retouches",
+      en: "Bespoke: 14 to 20 business days · Rental: Ready-to-wear with custom alterations"
     },
-    coverImage: '/affiche-junior-zeus.jpg',
+    coverImage: "/Junior%20Zeus%20Style/robe%20marriage/496126411_1266321042167031_236859799978794159_n.jpg",
     gallery: [
-      '/affiche-junior-zeus.jpg'
-    ],
-    isFeatured: true,
-    priceEstimate: 'Location : dès 45 000 FCFA · Confection : 135 000 FCFA',
-    needsRealPhoto: false
-  },
-  {
-    id: 'cr-01',
-    slug: 'costume-zeus-imperial',
-    title: {
-      fr: 'Costume Impérial Zeus',
-      en: 'Imperial Zeus Ensemble'
-    },
-    category: 'ceremonie',
-    collectionId: 'col-ongola',
-    collectionName: {
-      fr: 'Renaissance Ongola',
-      en: 'Ongola Renaissance'
-    },
-    year: 2026,
-    status: 'sur_commande',
-    summary: {
-      fr: 'Veste de cérémonie à col montant asymétrique et boutonnage dissimulé.',
-      en: 'Ceremonial structured jacket with asymmetric stand-up collar and concealed placket.'
-    },
-    description: {
-      fr: 'Pièce emblématique du styliste Ariel Junior Nzesseu. Coupe structurée avec épaulettes renforcées à l’ancienne, fente dorsale cavalière et passepoils en soie bronze.',
-      en: 'Signature piece by designer Ariel Junior Nzesseu. Sculpted cut with heritage shoulder canvas, equestrian back vent, and bronze silk piping.'
-    },
-    materials: {
-      fr: 'Laine froide 120s d’Italie, doublure jacquard satinée, boutons en corne gravée.',
-      en: 'Italian super 120s cool wool, satin jacquard lining, custom engraved horn buttons.'
-    },
-    craftDetails: {
-      fr: '28 heures de travail à l’atelier à Yaoundé. Entoilage semi-traditionnel et coutures rabattues main.',
-      en: '28 workshop hours in Yaoundé. Semi-canvassed construction and hand-finished felled seams.'
-    },
-    estimatedLeadTime: {
-      fr: '10 à 14 jours ouvrés (avec 2 essayages)',
-      en: '10 to 14 business days (including 2 in-person fittings)'
-    },
-    coverImage: '/src/assets/images/creation_ceremonie_gold_1790588810602.jpg',
-    gallery: [
-      '/src/assets/images/creation_ceremonie_gold_1790588810602.jpg',
-      '/src/assets/images/textile_craft_detail_1790586114656.jpg',
-      '/src/assets/images/atelier_fitting_space_1790586126242.jpg'
-    ],
-    isFeatured: true,
-    priceEstimate: '185 000 FCFA (~280 €)',
-    needsRealPhoto: false
-  },
-  {
-    id: 'cr-02',
-    slug: 'veste-croisee-ebene',
-    title: {
-      fr: 'Veste Croisée Ébène & Bronze',
-      en: 'Double-Breasted Ebony & Bronze Jacket'
-    },
-    category: 'sur-mesure',
-    collectionId: 'col-ligne-zeus',
-    collectionName: {
-      fr: 'Ligne Zeus Sartoriale',
-      en: 'Zeus Sartorial Line'
-    },
-    year: 2026,
-    status: 'sur_commande',
-    summary: {
-      fr: 'Veste croisée à cran aigu, revers généreux et surpiqûres sellier ton sur ton.',
-      en: 'Double-breasted jacket with peak lapels, generous belly, and tone-on-tone pick stitching.'
-    },
-    description: {
-      fr: 'Conçue pour conférer une présence altière. Cette silhouette réinvente le costume d’affaires et de gala par une carrure nette et une taille cintrée sans aucune rigidité.',
-      en: 'Engineered to bestow an imposing stance. Reimagining business and gala attire through clean shoulders and a sculptured waist without rigidity.'
-    },
-    materials: {
-      fr: 'Sergé de laine noir profond, fils de soie guipés, doublure respirante cupro.',
-      en: 'Deep black wool twill, wrapped silk thread, breathable cupro lining.'
-    },
-    craftDetails: {
-      fr: 'Boutonnières milanaises faites à l’aiguille fine par le maître tailleur.',
-      en: 'Hand-sewn Milanese buttonholes executed with fine needle by the master cutter.'
-    },
-    estimatedLeadTime: {
-      fr: '12 jours ouvrés',
-      en: '12 business days'
-    },
-    coverImage: '/src/assets/images/creation_sartorial_suit_1790588825616.jpg',
-    gallery: [
-      '/src/assets/images/creation_sartorial_suit_1790588825616.jpg',
-      '/src/assets/images/hero_atelier_couture_1790586086146.jpg'
-    ],
-    isFeatured: true,
-    priceEstimate: '145 000 FCFA (~220 €)',
-    needsRealPhoto: false
-  },
-  {
-    id: 'cr-03',
-    slug: 'ensemble-grand-boubou-contemporain',
-    title: {
-      fr: 'Tunique & Pantalon Contemporain',
-      en: 'Contemporary Tunic & Trousers Set'
-    },
-    category: 'sur-mesure',
-    collectionId: 'col-ongola',
-    collectionName: {
-      fr: 'Renaissance Ongola',
-      en: 'Ongola Renaissance'
-    },
-    year: 2025,
-    status: 'disponible',
-    summary: {
-      fr: 'Ensemble deux pièces minimaliste à col officier et fentes géométriques latérales.',
-      en: 'Minimalist two-piece set with mandarin collar and geometric lateral vents.'
-    },
-    description: {
-      fr: 'Le vêtement d’apparat africain dans son épure la plus contemporaine. Lignes droites, drapé fluide, zéro surcharge pour laisser parler la perfection du tombé.',
-      en: 'Ceremonial African attire in its purest contemporary form. Straight lines, fluid drape, and zero visual clutter to honor the natural fabric drape.'
-    },
-    materials: {
-      fr: 'Coton peigné lourd damassé teinté artisanalement.',
-      en: 'Heavy combed cotton damask with artisanal dyeing.'
-    },
-    craftDetails: {
-      fr: 'Col officier renforcé à la toile de lin naturel, finitions intérieures gansées.',
-      en: 'Stand collar reinforced with natural linen canvas, bias-bound interior seams.'
-    },
-    estimatedLeadTime: {
-      fr: '7 à 10 jours ouvrés',
-      en: '7 to 10 business days'
-    },
-    coverImage: '/src/assets/images/atelier_fitting_space_1790586126242.jpg',
-    gallery: [
-      '/src/assets/images/atelier_fitting_space_1790586126242.jpg'
-    ],
-    isFeatured: true,
-    priceEstimate: '95 000 FCFA (~145 €)',
-    needsRealPhoto: true
-  },
-  {
-    id: 'cr-04',
-    slug: 'manteau-officier-sable-doux',
-    title: {
-      fr: 'Manteau Officier Sable Doux',
-      en: 'Soft Sand Officer Overcoat'
-    },
-    category: 'pret-a-porter',
-    collectionId: 'col-ongola',
-    collectionName: {
-      fr: 'Renaissance Ongola',
-      en: 'Ongola Renaissance'
-    },
-    year: 2026,
-    status: 'piece_unique',
-    summary: {
-      fr: 'Manteau mi-long droit en drap de laine beige sable avec col convertible.',
-      en: 'Mid-length straight overcoat in sandy wool melton with convertible storm collar.'
-    },
-    description: {
-      fr: 'Une pièce d’exception taillée en exemplaire unique. Équilibre rare entre élégance voyageuse et structure architecturale.',
-      en: 'A one-of-a-kind garment crafted as an exclusive single edition. Rare equilibrium between traveler elegance and architectural form.'
-    },
-    materials: {
-      fr: 'Drap de laine et cachemire sable doux, boutons militaires laiton brossé.',
-      en: 'Soft sand wool and cashmere blend, brushed brass custom buttons.'
-    },
-    craftDetails: {
-      fr: 'Poches passepoilées à rabat biais, doublure contrastée brun cacao.',
-      en: 'Slanted flap double welt pockets, contrasting cacao brown lining.'
-    },
-    estimatedLeadTime: {
-      fr: 'Pièce unique disponible immédiatement à l’atelier',
-      en: 'Unique piece immediately available at the Yaoundé atelier'
-    },
-    coverImage: '/src/assets/images/creation_robe_draping_1790588840264.jpg',
-    gallery: [
-      '/src/assets/images/creation_robe_draping_1790588840264.jpg',
-      '/src/assets/images/textile_craft_detail_1790586114656.jpg'
-    ],
-    isFeatured: true,
-    priceEstimate: '220 000 FCFA (~335 €)',
-    needsRealPhoto: false
-  },
-  {
-    id: 'cr-05',
-    slug: 'veste-saharienne-cacao-couture',
-    title: {
-      fr: 'Saharienne Couture Cacao',
-      en: 'Cacao Couture Safari Jacket'
-    },
-    category: 'pret-a-porter',
-    collectionId: 'col-ligne-zeus',
-    collectionName: {
-      fr: 'Ligne Zeus Sartoriale',
-      en: 'Zeus Sartorial Line'
-    },
-    year: 2025,
-    status: 'sur_commande',
-    summary: {
-      fr: 'Quatre poches soufflet à rabats structurés et ceinture sous passants intégrés.',
-      en: 'Four bellows pockets with tailored flaps and integrated loop belt.'
-    },
-    description: {
-      fr: 'Interprétation urbaine de la saharienne classique, pensée pour le climat équatorial de Yaoundé tout en conservant une coupe tailleur affûtée.',
-      en: 'Urban interpretation of the classic safari jacket, designed for the equatorial Yaoundé climate while keeping a razor-sharp tailor cut.'
-    },
-    materials: {
-      fr: 'Lin irlandais lourd 380g couleur brun cacao et surpiqûres bronze.',
-      en: 'Heavy 380g Irish linen in cacao brown with bronze contrast topstitching.'
-    },
-    craftDetails: {
-      fr: 'Dos à plis d’aisance pour une liberté totale de mouvement au volant ou en marche.',
-      en: 'Pleated action back ensuring complete mobility while driving or walking.'
-    },
-    coverImage: '/src/assets/images/hero_atelier_couture_1790586086146.jpg',
-    gallery: [
-      '/src/assets/images/hero_atelier_couture_1790586086146.jpg'
-    ],
-    isFeatured: true,
-    priceEstimate: '110 000 FCFA (~168 €)',
-    needsRealPhoto: true
-  },
-  {
-    id: 'cr-06',
-    slug: 'gilet-d-apparat-broderies-fil-bronze',
-    title: {
-      fr: 'Gilet d’Apparat Broderies Bronze',
-      en: 'Ceremonial Waistcoat with Bronze Embroidery'
-    },
-    category: 'accessoires',
-    collectionId: 'col-ongola',
-    collectionName: {
-      fr: 'Renaissance Ongola',
-      en: 'Ongola Renaissance'
-    },
-    year: 2025,
-    status: 'archives',
-    summary: {
-      fr: 'Gilet croisé sans col à cinq boutons fermés et broderies linéaires.',
-      en: 'Collarless five-button double-breasted waistcoat with geometric linear needlework.'
-    },
-    description: {
-      fr: 'Créé pour un gala diplomatique à Yaoundé. Archives conservées pour illustrer le savoir-faire de broderie main de la maison Junior Zeus Style.',
-      en: 'Created for a diplomatic gala in Yaoundé. Kept in the brand archives to exemplify Junior Zeus Style hand-embroidery expertise.'
-    },
-    materials: {
-      fr: 'Soie sauvage ivoire chaud et fils métalliques bronze.',
-      en: 'Warm ivory raw silk and metallic bronze embroidery filaments.'
-    },
-    craftDetails: {
-      fr: 'Dos en satin doublé de coton avec martingale de serrage en laiton gravé.',
-      en: 'Cotton-lined satin back with engraved brass cinch buckle.'
-    },
-    coverImage: '/src/assets/images/textile_craft_detail_1790586114656.jpg',
-    gallery: [
-      '/src/assets/images/textile_craft_detail_1790586114656.jpg'
+      "/Junior%20Zeus%20Style/robe%20marriage/496126411_1266321042167031_236859799978794159_n.jpg"
     ],
     isFeatured: false,
-    priceEstimate: '65 000 FCFA (~100 €)',
-    needsRealPhoto: true
+    priceEstimate: "Location : 85 000 FCFA · Confection sur mesure : 480 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-mariee-royale-souveraine",
+    slug: "robe-mariee-royale-souveraine",
+    title: {
+      fr: "Robe de Mariée Royale Grand Apparat \"Souveraine\"",
+      en: "Royal Grand Apparat Bridal Gown \"Sovereign\""
+    },
+    category: "robe-mariee",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Haute Cérémonie Nuptiale",
+      en: "Haute Bridal Ceremony"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Chef-d’œuvre d’apparat aux incrustations florales 3D, manches royales et traîne impériale de 3 mètres.",
+      en: "Grand apparat masterpiece with 3D floral inlays, royal statement sleeves and 3-meter imperial train."
+    },
+    description: {
+      fr: "La quintessence de l’art couturier de Junior Zeus Style. Chaque pétale a été découpé et façonné un à un à la chaleur de fer à repasser en cuivre, créant un relief sculptural digne des plus grands mariages princiers.",
+      en: "The pinnacle of Junior Zeus Style couture craftsmanship. Every single petal was shaped individually with heated brass irons, delivering sculptured relief worthy of princely celebrations."
+    },
+    materials: {
+      fr: "Organza triple épaisseur, dentelle brodée de fils d’argent et paillettes mates, soie lourde.",
+      en: "Triple-layer organza, silver-threaded embroidered lace with matte sequins, heavy silk."
+    },
+    craftDetails: {
+      fr: "Plus de 90 heures de travail manuel. Pièce d’art unique entièrement montée dans nos ateliers de Yaoundé.",
+      en: "Over 90 hours of manual craft. Unique art piece fully constructed in our Yaoundé atelier."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 25 à 35 jours · Location exclusive : Dès 150 000 FCFA",
+      en: "Bespoke: 25 to 35 days · Exclusive rental: From 150,000 FCFA"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20marriage/557165903_1402493751883092_3002146552148991567_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20marriage/557165903_1402493751883092_3002146552148991567_n.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Location exclusive : 150 000 FCFA · Confection sur mesure : 750 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-emeraude-sculptee",
+    slug: "fourreau-de-gala-emeraude-traine-sculptee",
+    title: {
+      fr: "Fourreau de Gala Émeraude & Traîne Sculptée",
+      en: "Emerald Gala Sheath & Sculpted Train"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Fourreau d’exception en satin vert émeraude intense avec fente haute et drapé croisé.",
+      en: "Exceptional sheath in deep emerald satin featuring high leg slit and overlapping crossover drape."
+    },
+    description: {
+      fr: "Une silhouette audacieuse conçue pour les tapis rouges et les grands galas. La teinte émeraude capte subtilement les projecteurs tandis que l’architecture du bustier assure une allure souveraine.",
+      en: "A bold silhouette crafted for red carpets and grand galas. The deep emerald tone captures stage lights while structural corsetry imparts sovereign poise."
+    },
+    materials: {
+      fr: "Satin lourd duchesse vert émeraude, doublure soie, baleines souples.",
+      en: "Heavy emerald duchess satin, silk lining, flexible stays."
+    },
+    craftDetails: {
+      fr: "Drapé sculpté à la main, fermeture éclair invisible et ourlet invisible cousu à la main.",
+      en: "Hand-sculpted draping, invisible zipper and hand-stitched blind hem."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 10 à 14 jours ouvrés · Location : Disponible immédiatement",
+      en: "Bespoke: 10 to 14 business days · Rental: Available immediately"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%201.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%201.jpg",
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%201%20gallery.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Location : 65 000 FCFA · Confection sur mesure : 260 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-velours-cristaux",
+    slug: "robe-sirene-velours-nuit-cristaux",
+    title: {
+      fr: "Robe Sirène Velours Nuit & Cristaux Dorés",
+      en: "Night Velvet Mermaid Gown & Golden Crystals"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Velours royal noir profond réhaussé de cristaux dorés appliqués en cascade lumineuse.",
+      en: "Deep royal black velvet illuminated by cascading warm golden crystal inlays."
+    },
+    description: {
+      fr: "Le contraste sublime du velours dense et des étincelles dorées. Cette robe sirène épouse chaque mouvement avec une grâce impériale lors des soirées de remise de prix et dîners d’État.",
+      en: "The sublime contrast of rich plush velvet and golden sparkles. This mermaid gown accompanies every movement with imperial dignity at state dinners and awards galas."
+    },
+    materials: {
+      fr: "Velours de soie extensible noir onyx, cristaux Swarovski ambre et or, doublure satin respirante.",
+      en: "Onyx black stretch silk velvet, amber and gold crystals, breathable satin lining."
+    },
+    craftDetails: {
+      fr: "Pose minutieuse des cristaux à chaud et surpiqûres or à l’atelier de Yaoundé.",
+      en: "Meticulous heat-set crystal setting and golden topstitching in our Yaoundé atelier."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 12 à 16 jours · Location : Disponible à l’atelier",
+      en: "Bespoke: 12 to 16 days · Rental: Available at the atelier"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%202.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%202.jpg",
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%202%20gallery.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Location : 70 000 FCFA · Confection sur mesure : 290 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-cocktail-asymetrique",
+    slug: "robe-cocktail-haute-voltige-asymetrique",
+    title: {
+      fr: "Robe Cocktail Haute Voltige Asymétrique",
+      en: "Asymmetric High-Chic Cocktail Dress"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Coupe midi asymétrique, épaule unique architecturée et tombé impeccable en crêpe fluide.",
+      en: "Midi asymmetric cut, architectural one-shoulder neckline, and pristine fluid crepe drape."
+    },
+    description: {
+      fr: "Une silhouette contemporaine pensée pour les réceptions prestigieuses et cocktails dinatoires. L’épaulette sculptée donne une assurance magnétique sans alourdir le mouvement.",
+      en: "A contemporary silhouette designed for prestige receptions and cocktail events. The sculpted shoulder line delivers magnetic poise with complete ease of motion."
+    },
+    materials: {
+      fr: "Crêpe lourd de soie, renfort épaule thermo-formé, doublure anti-froissement.",
+      en: "Heavy silk crepe, thermo-formed shoulder structure, crease-resistant lining."
+    },
+    craftDetails: {
+      fr: "Coupe biseautée au millimètre, finitions bord franc doublé à la main.",
+      en: "Precision bias cut, hand-lined clean edge finishes."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 7 à 10 jours ouvrés · Location : Prête en boutique",
+      en: "Bespoke: 7 to 10 business days · Rental: Ready in store"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%203.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%203.jpg",
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%203%20gallery.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Location : 55 000 FCFA · Confection sur mesure : 185 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-rubis-imperial",
+    slug: "robe-soiree-satin-duchesse-rubis-imperial",
+    title: {
+      fr: "Robe de Soirée Satin Duchesse Rubis Impérial",
+      en: "Imperial Ruby Duchess Satin Evening Gown"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Couleur rouge rubis profond, décolleté glamour sculpté et volume royal théâtral.",
+      en: "Deep ruby red glow, sculpted glamour neckline, and dramatic royal sweep."
+    },
+    description: {
+      fr: "L’incarnation même du faste et de la passion selon Junior Zeus Style. Le satin duchesse réfléchit la lumière avec une intensité envoûtante, faisant de celle qui la porte la reine indétrônable de la soirée.",
+      en: "The very embodiment of pageantry and passion by Junior Zeus Style. The duchess satin reflects light with mesmerizing depth, commanding every gaze across the ballroom."
+    },
+    materials: {
+      fr: "Satin duchesse lourd 420g coloris rubis impérial, baleinage anatomique.",
+      en: "Heavy 420g duchess satin in imperial ruby, anatomical corsetry stays."
+    },
+    craftDetails: {
+      fr: "Poches invisibles latérales intégrées dans les plis, ourlet rigide d’apparat.",
+      en: "Concealed side seam pockets nestled in structured pleats, weighted hem."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 12 à 15 jours · Location : Disponible immédiatement",
+      en: "Bespoke: 12 to 15 days · Rental: Available immediately"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%204.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%204.jpg",
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/robe%204%20gallery.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Location : 75 000 FCFA · Confection sur mesure : 320 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-aura-doree",
+    slug: "robe-soiree-drape-aura-doree",
+    title: {
+      fr: "Robe de Soirée Drapée \"Aura Dorée\"",
+      en: "Draped Evening Gown \"Golden Aura\""
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Drapé oblique enveloppant aux reflets dorés chauds avec taille marquée et traîne fluide.",
+      en: "Wrapped bias drapery with shimmering warm golden tones, defined waist and fluid train."
+    },
+    description: {
+      fr: "Une pièce de gala qui marie souplesse et structure. Son drapé flatte toutes les morphologies avec une aisance rare et une élégance intemporelle.",
+      en: "A gala creation marrying softness and structure. Its draped lines flatter silhouettes with effortless ease and enduring timeless chic."
+    },
+    materials: {
+      fr: "Lamé de soie métallisé doré, jersey de soie, doublure microfibre douce.",
+      en: "Metallic gold silk lamé, silk jersey, soft microfiber lining."
+    },
+    craftDetails: {
+      fr: "Fronces réalisées à la main pour une répartition harmonique des volumes.",
+      en: "Hand-gathered pleats ensuring balanced harmonious volume distribution."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 10 à 12 jours · Location : Dès 60 000 FCFA",
+      en: "Bespoke: 10 to 12 days · Rental: From 60,000 FCFA"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/600338396_1472902794842187_917739426772011426_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/600338396_1472902794842187_917739426772011426_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Location : 60 000 FCFA · Confection sur mesure : 240 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-noire-constellation",
+    slug: "robe-fourreau-noire-broderies-constellation",
+    title: {
+      fr: "Robe Fourreau Noire & Broderies Constellation",
+      en: "Black Sheath Gown with Constellation Embroidery"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Fourreau noir épuré souligné de broderies délicates au fil d’or rappelant les étoiles.",
+      en: "Refined black column sheath illuminated with delicate gold needlework reminiscent of stars."
+    },
+    description: {
+      fr: "L’élégance du noir sublimée par des motifs astronomiques brodés par nos artisans. Discrète et captivante, elle convient parfaitement aux cérémonies officielles et soirées d’ambassade.",
+      en: "The eternal allure of black elevated by hand-embroidered celestial motifs. Subtle yet commanding, ideal for state receptions and diplomatic galas."
+    },
+    materials: {
+      fr: "Crêpe georgette double retors, fil de cannetille or, mousseline de soie.",
+      en: "Double-twisted georgette crepe, gold bullion wire, silk chiffon."
+    },
+    craftDetails: {
+      fr: "Broderie artisanale au crochet de Lunéville exécutée avec précision.",
+      en: "Artisanal Lunéville hook embroidery executed with meticulous precision."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 12 à 15 jours ouvrés · Location : En atelier",
+      en: "Bespoke: 12 to 15 business days · Rental: In atelier"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/484492931_1217155983750204_580069441649787067_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/484492931_1217155983750204_580069441649787067_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Location : 50 000 FCFA · Confection sur mesure : 210 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-sirene-minuit",
+    slug: "robe-sirene-elegance-epuree-minuit",
+    title: {
+      fr: "Robe Sirène d’Élégance Épurée \"Minuit\"",
+      en: "Midnight Pure Line Mermaid Gown"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Ligne sirène sculptée sans artifice, col montant graphique et dos échancré.",
+      en: "Sculpted minimal mermaid line, graphic high neck and dramatic cut-out back."
+    },
+    description: {
+      fr: "Une pièce minimaliste d’une rare intensité. La pureté de la ligne met en valeur le port altier et la grâce naturelle du corps.",
+      en: "A minimalist piece of striking intensity. Line purity celebrates erect posture and unforced natural body grace."
+    },
+    materials: {
+      fr: "Crêpe lourd stretch haute tenue, doublure seconde peau.",
+      en: "Heavy stretch crepe with superior recovery, second-skin lining."
+    },
+    craftDetails: {
+      fr: "Pinces invisibles et entoilage thermo-fusionné pour une tenue infaillible.",
+      en: "Concealed darts and tailored fusing ensuring immaculate hold."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 9 à 12 jours · Location : Disponible",
+      en: "Bespoke: 9 to 12 days · Rental: Available"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/485701924_1221639269968542_6175706825688128196_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/485701924_1221639269968542_6175706825688128196_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Location : 55 000 FCFA · Confection sur mesure : 195 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-ceremonie-saphir",
+    slug: "robe-ceremonie-saphir-decoupes-geometriques",
+    title: {
+      fr: "Robe de Cérémonie Saphir & Découpes Géométriques",
+      en: "Sapphire Ceremony Gown with Geometric Cutouts"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Bleu saphir électrique, corsage orné de bandes géométriques et traîne de soie.",
+      en: "Electric sapphire blue, geometric paneling bodice, and silk sweep."
+    },
+    description: {
+      fr: "Inspirée de la force architecturale des gratte-ciel contemporains et du prestige camerounais. Les découpes mettent en valeur la taille avec modernité.",
+      en: "Inspired by modern architectural angles and Cameroonian grandeur. Tailored cuts define the waistline with sharp contemporary flair."
+    },
+    materials: {
+      fr: "Mikado bleu saphir royal, tulle illusion, zip invisible doré.",
+      en: "Royal sapphire mikado, illusion tulle, gold concealed zipper."
+    },
+    craftDetails: {
+      fr: "Surpiqûres sellier précises et renfort de taille intérieur en gros-grain.",
+      en: "Saddler topstitching and interior grosgrain waiststay."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 11 à 14 jours · Location : Disponible",
+      en: "Bespoke: 11 to 14 days · Rental: Available"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/488786254_1238452691620533_3130574291762972006_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/488786254_1238452691620533_3130574291762972006_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Location : 60 000 FCFA · Confection sur mesure : 230 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-gala-sculptee",
+    slug: "robe-gala-couture-epaulettes-sculptees",
+    title: {
+      fr: "Robe de Gala Couture à Épaulettes Sculptées",
+      en: "Haute Gala Gown with Sculpted Shoulder Structure"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Carrure impériale rehaussée d’épaulettes pointues couture, taille ceinturée et drapé majestueux.",
+      en: "Commanding shoulder line with peaked couture epaulettes, cinched waist, and majestic drape."
+    },
+    description: {
+      fr: "Une robe faite pour dominer l’espace. L’audace de la coupe d’épaules alliée au tombé gracieux de la jupe affirme une puissance stylistique incomparable.",
+      en: "A gown built to own the room. Daring peak shoulders paired with soft cascading skirts articulate unyielding stylistic authority."
+    },
+    materials: {
+      fr: "Drap de soie lourd, doublure satin soyeuse, feutre structuré.",
+      en: "Heavy silk cloth, silken satin lining, structured shoulder tailoring canvas."
+    },
+    craftDetails: {
+      fr: "Montage d’épaules tailleur selon la tradition sartoriale masculine adapté à la haute robe féminine.",
+      en: "Men’s bespoke shoulder pad construction applied to feminine haute couture."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 14 à 18 jours · Location : Dès 80 000 FCFA",
+      en: "Bespoke: 14 to 18 days · Rental: From 80,000 FCFA"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/494927791_1263260855806383_288526690001212628_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/494927791_1263260855806383_288526690001212628_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Location : 80 000 FCFA · Confection sur mesure : 340 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-soiree-prestige-cape",
+    slug: "robe-prestige-cape-amovible-soie",
+    title: {
+      fr: "Robe de Prestige & Cape Amovible en Soie",
+      en: "Prestige Evening Gown with Detachable Silk Cape"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Silhouette 2-en-1 avec cape théâtrale amovible brodée et robe sirène ajustée.",
+      en: "2-in-1 convertible creation featuring theatrical embroidered detachable cape and sleek mermaid gown."
+    },
+    description: {
+      fr: "Prévue pour les entrées royales : arrivez drapée dans une cape monumentale puis retirez-la pour dévoiler un fourreau époustouflant taillé au millimètre.",
+      en: "Crafted for royal entrances: arrive draped in a monumental cape, then detach it to reveal a breath-taking bespoke sheath."
+    },
+    materials: {
+      fr: "Satin duchesse, organza de soie, attaches bijoux laiton doré.",
+      en: "Duchess satin, silk organza, gold brass jewelry clasp closures."
+    },
+    craftDetails: {
+      fr: "Système d’attache invisible breveté atelier permettant une transformation instantanée.",
+      en: "Atelier concealed fast-release clasp allowing instant transformation."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 16 à 20 jours ouvrés · Location : 85 000 FCFA",
+      en: "Bespoke: 16 to 20 business days · Rental: 85,000 FCFA"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20de%20soiree/499924055_1282184883913980_1845691874363500593_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20de%20soiree/499924055_1282184883913980_1845691874363500593_n.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Location : 85 000 FCFA · Confection sur mesure : 360 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-trad-royal-ndop",
+    slug: "ensemble-royal-ndop-soie-noire",
+    title: {
+      fr: "Ensemble Royal Ndop & Soie Noire",
+      en: "Royal Ndop & Black Silk Ensemble"
+    },
+    category: "robe-traditionnelle",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Héritage & Coutume",
+      en: "Heritage & Customary Couture"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Hommage aux chefferies de l’Ouest Cameroun alliant le textile sacré Ndop et la haute couture contemporaine.",
+      en: "Tribute to Western Cameroon kingdoms combining sacred Ndop textile with contemporary couture lines."
+    },
+    description: {
+      fr: "Une réinterprétation majestueuse du pagne royal Ndop des Grassfields. Rehaussé de passepoils en soie noire et de boutons métalliques gravés, cet ensemble incarne la dignité ancestrale sublimée par le style Zeus.",
+      en: "A regal reinterpretation of sacred Grassfields Ndop cloth. Outlined with black silk pipings and engraved metal buttons, this attire embodies royal ancestry through Zeus tailoring."
+    },
+    materials: {
+      fr: "Tissu traditionnel Ndop authentique teint à l’indigo naturel, faille de soie noire.",
+      en: "Authentic Ndop royal cloth dyed with natural indigo, black silk faille."
+    },
+    craftDetails: {
+      fr: "Respect scrupuleux du sens des symboles rituels lors de la découpe et assemblage manuel soigné.",
+      en: "Rigorous alignment of customary symbols during hand cutting and tailored assembly."
+    },
+    estimatedLeadTime: {
+      fr: "Confection sur mesure : 10 à 14 jours ouvrés",
+      en: "Bespoke commission: 10 to 14 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20traditionnele/480673124_1216626153803187_4718876397748933247_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20traditionnele/480673124_1216626153803187_4718876397748933247_n.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Confection sur mesure : 160 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-trad-heritage-grassfields",
+    slug: "robe-ceremonielle-coutumiere-heritage-grassfields",
+    title: {
+      fr: "Robe Cérémonielle Coutumière \"Héritage des Grassfields\"",
+      en: "Customary Ceremonial Gown \"Grassfields Heritage\""
+    },
+    category: "robe-traditionnelle",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Héritage & Coutume",
+      en: "Heritage & Customary Couture"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Robe d’apparat pour dot et intronisations ornée de motifs graphiques ancestraux.",
+      en: "Regal customary dress for traditional dowry and royal coronations."
+    },
+    description: {
+      fr: "Idéale pour les mariages traditionnels, les cérémonies de dot et les festivités coutumières au Cameroun. Elle confère à celle qui la porte une prestance inégalée.",
+      en: "Perfect for traditional marriages, dowry rites and customary ceremonies across Cameroon. Imparts unrivalled dignity and poise."
+    },
+    materials: {
+      fr: "Tissage traditionnel enrichi de fils de coton d’Afrique, doublure fine respirante.",
+      en: "Traditional weave enriched with African cotton filaments, breathable lining."
+    },
+    craftDetails: {
+      fr: "Broderies traditionnelles en relief exécutées à la main par nos artisans maîtres.",
+      en: "Embossed traditional needlecraft completed by master artisans."
+    },
+    estimatedLeadTime: {
+      fr: "12 à 15 jours ouvrés à l’atelier de Yaoundé",
+      en: "12 to 15 business days at the Yaoundé atelier"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20traditionnele/482030010_1215552617243874_3350988383809882595_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20traditionnele/482030010_1215552617243874_3350988383809882595_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection sur mesure : 185 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-trad-reine-mere",
+    slug: "robe-mariage-traditionnel-reine-mere",
+    title: {
+      fr: "Robe de Mariage Traditionnel \"Reine Mère\"",
+      en: "Traditional Bridal Gown \"Queen Mother\""
+    },
+    category: "robe-traditionnelle",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Héritage & Coutume",
+      en: "Heritage & Customary Couture"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Robe d’apparat magistrale pensée pour la mariée coutumière ou les figures d’autorité familiale.",
+      en: "Magisterial ceremony gown designed for the customary bride and matriarch figures."
+    },
+    description: {
+      fr: "Une splendeur textile consacrée aux noces coutumières. La structure offre une allure imposante tout en assurant une totale liberté de mouvement pendant les rituels et danses traditionnelles.",
+      en: "Textile splendor dedicated to customary celebrations. The structure imparts commanding presence while offering complete agility during rituals and dances."
+    },
+    materials: {
+      fr: "Brocart d’art aux fils d’or, velours noir profond, broderies artisanales perlées.",
+      en: "Fine art brocade with gold threads, deep black velvet, beaded artisanal needlework."
+    },
+    craftDetails: {
+      fr: "Plus de 40 heures d’ouvrage manuel sur le plastron et le bas de robe.",
+      en: "Over 40 hours of meticulous hand needlecraft across the plastron and hem."
+    },
+    estimatedLeadTime: {
+      fr: "14 à 20 jours ouvrés selon le calendrier de l’événement",
+      en: "14 to 20 business days tailored to your event schedule"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20traditionnele/484353563_1219005670231902_8307857946750703536_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20traditionnele/484353563_1219005670231902_8307857946750703536_n.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Confection sur mesure : 220 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-trad-afritude-basques",
+    slug: "ensemble-afritude-moderne-basques-sculptees",
+    title: {
+      fr: "Ensemble Afritude Moderne à Basques Sculptées",
+      en: "Modern Afritude Ensemble with Sculpted Peplum"
+    },
+    category: "robe-traditionnelle",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Héritage & Coutume",
+      en: "Heritage & Customary Couture"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Veste cintrée à basques évasées et jupe crayon assortie aux empiècements géométriques.",
+      en: "Tailored flared peplum jacket with matching pencil skirt and geometric customary insets."
+    },
+    description: {
+      fr: "L’union du chic urbain international et de l’identité africaine fière. Une silhouette prisée pour les cultes solennels, cérémonies d’action de grâce et réceptions familiales.",
+      en: "The marriage of international tailored chic and proud African identity. A favorite silhouette for Thanksgiving celebrations and high-society family milestones."
+    },
+    materials: {
+      fr: "Coton peigné texturé 300g, incrustations Wax hollandais véritable, boutons coordonnés.",
+      en: "Textured combed 300g cotton, genuine Dutch Wax insets, coordinated bespoke buttons."
+    },
+    craftDetails: {
+      fr: "Basques rigidifiées à la toile de tailleur traditionnelle pour un galbe net et durable.",
+      en: "Structured canvas-backed peplum retaining razor-sharp definition."
+    },
+    estimatedLeadTime: {
+      fr: "8 à 12 jours ouvrés",
+      en: "8 to 12 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20traditionnele/488703470_1236559648476504_7226305529250703607_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20traditionnele/488703470_1236559648476504_7226305529250703607_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection sur mesure : 135 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-trad-princesse-sawa",
+    slug: "robe-traditionnelle-apparat-princesse-sawa",
+    title: {
+      fr: "Robe Traditionnelle d’Apparat \"Princesse Sawa\"",
+      en: "Traditional Ceremonial Gown \"Sawa Princess\""
+    },
+    category: "robe-traditionnelle",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Héritage & Coutume",
+      en: "Heritage & Customary Couture"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Inspirée du Kaba d’apparat princier avec drapé noble et broderies de cérémonie.",
+      en: "Inspired by princely ceremonial Kaba with noble drape and ceremonial needlework."
+    },
+    description: {
+      fr: "Une création qui sublime l’élégance côtière camerounaise. L’ampleur royale du tissu et le raffinement des découpes traduisent une noblesse sans égale.",
+      en: "A creation honoring coastal Cameroonian royalty. The regal volume of cloth and refined seam lines communicate unmatched grandeur."
+    },
+    materials: {
+      fr: "Soie damassée lourde, fil d’or antique, boutons de nacre travaillés.",
+      en: "Heavy damask silk, antique gold thread, sculpted mother-of-pearl buttons."
+    },
+    craftDetails: {
+      fr: "Plis religieuse réalisés au millimètre et col montant impérial.",
+      en: "Millimeter-precise pin-tuck pleats and stand imperial collar."
+    },
+    estimatedLeadTime: {
+      fr: "12 à 16 jours ouvrés",
+      en: "12 to 16 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/robe%20traditionnele/494582470_1262721892526946_4169431208078102087_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/robe%20traditionnele/494582470_1262721892526946_4169431208078102087_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection sur mesure : 210 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-couple-apparat-royal",
+    slug: "duo-apparat-couple-ceremonie-coutumiere",
+    title: {
+      fr: "Duo d’Apparat Couple Cérémonie & Mariage Coutumier",
+      en: "Royal Couple Ensemble for Customary Wedding & Ceremony"
+    },
+    category: "tenue-couple",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Harmonie & Couple",
+      en: "Harmony & Couple Ensembles"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Ensemble coordonné 2 silhouettes pour elle et lui, coupes harmonisées et broderies jumelles.",
+      en: "Coordinated two-silhouette couple ensemble for her and him with harmonized tailoring."
+    },
+    description: {
+      fr: "Pour sceller l’union avec une prestance royale. Ce duo comprend la robe de mariée traditionnelle pour madame et la tunique d’apparat avec pantalon sartorial pour monsieur, tous deux confectionnés dans les mêmes étoffes nobles et finis avec les mêmes broderies complices.",
+      en: "To seal matrimony with regal authority. This duo features the customary ceremonial gown for her and matching tailored apparat tunic with trousers for him, crafted in harmonized textiles and signature matching embroidery."
+    },
+    materials: {
+      fr: "Tissu royal coordonné, broderies fil d’or et bronze, doublure satin soyeux pour les deux pièces.",
+      en: "Harmonized royal cloth, gold and bronze needlework, silk satin lining across both garments."
+    },
+    craftDetails: {
+      fr: "Double prise de mesure en tandem à l’atelier pour un équilibre visuel parfait du couple.",
+      en: "Tandem anatomical measurements in atelier ensuring harmonious aesthetic balance."
+    },
+    estimatedLeadTime: {
+      fr: "Duo complet : 18 à 25 jours ouvrés",
+      en: "Complete duo: 18 to 25 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/tenue%20couple/495627554_1266321848833617_597126451158312933_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/tenue%20couple/495627554_1266321848833617_597126451158312933_n.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Confection duo complet (Elle & Lui) : 380 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-ville-tailleur-fusele",
+    slug: "ensemble-tailleur-veste-pantalon-business-chic",
+    title: {
+      fr: "Ensemble Tailleur Veste & Pantalon \"Business Chic\"",
+      en: "Tailored Blazer & Tapered Trouser \"Business Chic\""
+    },
+    category: "tenue-ville",
+    collectionId: "col-ligne-zeus",
+    collectionName: {
+      fr: "Ligne Zeus Sartoriale",
+      en: "Zeus Sartorial Line"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Veste tailleur cintrée à revers en pointe et pantalon fuselé à pli permanent.",
+      en: "Fitted blazer with peaked lapels and crisp tapered crease-front trousers."
+    },
+    description: {
+      fr: "L’élégance au quotidien pour les leaders et cadres exigeants de Yaoundé. Une coupe nette qui inspire le respect en réunion comme en cocktail d’affaires.",
+      en: "Everyday elegance for demanding leaders and executives in Yaoundé. Sharp lines commanding respect in boardrooms and business events."
+    },
+    materials: {
+      fr: "Laine froide Super 120s italienne respirante, boutons en corne naturelle.",
+      en: "Breathable Italian Super 120s cool wool, natural horn buttons."
+    },
+    craftDetails: {
+      fr: "Demi-entoilage traditionnel garantissant une tenue impeccable tout au long de la journée.",
+      en: "Traditional half-canvas construction maintaining clean drape throughout long days."
+    },
+    estimatedLeadTime: {
+      fr: "8 à 10 jours ouvrés",
+      en: "8 to 10 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/tenue%20de%20ville/491925436_1246264554172680_7767893932304329360_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/tenue%20de%20ville/491925436_1246264554172680_7767893932304329360_n.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Confection sur mesure : 110 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-ville-costume-yaounde",
+    slug: "costume-deux-pieces-urbain-yaounde-chic",
+    title: {
+      fr: "Costume Deux Pièces Urbain Coupe Slim \"Yaoundé Chic\"",
+      en: "Urban Slim Two-Piece Suit \"Yaoundé Chic\""
+    },
+    category: "tenue-ville",
+    collectionId: "col-ligne-zeus",
+    collectionName: {
+      fr: "Ligne Zeus Sartoriale",
+      en: "Zeus Sartorial Line"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Veste contemporaine 2 boutons et pantalon moderne sans pinces taillé sur mesure.",
+      en: "Contemporary 2-button jacket and modern flat-front tailored trousers."
+    },
+    description: {
+      fr: "Le costume indispensable du vestiaire masculin moderne. Confectionné sur mesure pour épouser votre morphologie sans aucune tension indésirable.",
+      en: "The essential tailored suit for the modern wardrobe. Custom cut to mirror your anatomy without unwanted tension."
+    },
+    materials: {
+      fr: "Sergé de laine mélangée bleu nuit, doublure satin soyeuse cupro.",
+      en: "Midnight blue wool-blend twill, cupro silken satin lining."
+    },
+    craftDetails: {
+      fr: "Fentes latérales d’aisance, poches passepoilées avec rabats fins.",
+      en: "Dual side vents, double-welt pockets with refined clean flaps."
+    },
+    estimatedLeadTime: {
+      fr: "10 à 12 jours ouvrés",
+      en: "10 to 12 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/tenue%20de%20ville/492079576_1253585603440575_799118771042201339_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/tenue%20de%20ville/492079576_1253585603440575_799118771042201339_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection sur mesure : 135 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-ville-tunique-epuree",
+    slug: "ensemble-moderne-tunique-epuree",
+    title: {
+      fr: "Ensemble Moderne Deux Pièces Tunique Épurée",
+      en: "Modern Two-Piece Clean Line Tunic Set"
+    },
+    category: "tenue-ville",
+    collectionId: "col-ligne-zeus",
+    collectionName: {
+      fr: "Ligne Zeus Sartoriale",
+      en: "Zeus Sartorial Line"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Tunique contemporaine à col officier épuré et pantalon droit coordonné.",
+      en: "Contemporary stand-collar clean tunic paired with tailored matching trousers."
+    },
+    description: {
+      fr: "L’élégance décontractée haut de gamme. Parfaite pour les dimanches chics, réceptions de jour et sorties décontractées raffinées.",
+      en: "High-end relaxed elegance. Tailored for smart Sundays, daylight receptions and refined casual outings."
+    },
+    materials: {
+      fr: "Lin coton premium beige mastic, boutons nacrés.",
+      en: "Premium putty-beige linen-cotton blend, mother-of-pearl buttons."
+    },
+    craftDetails: {
+      fr: "Surpiqûres ton sur ton soignées et fentes d’aisance latérales.",
+      en: "Tone-on-tone fine topstitching and tailored side ease vents."
+    },
+    estimatedLeadTime: {
+      fr: "7 à 9 jours ouvrés",
+      en: "7 to 9 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/tenue%20de%20ville/494636348_1270344861764649_5743478493316092602_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/tenue%20de%20ville/494636348_1270344861764649_5743478493316092602_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection sur mesure : 90 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-ville-col-minimaliste",
+    slug: "tenue-ville-contemporaine-col-minimaliste",
+    title: {
+      fr: "Tenue de Ville Contemporaine & Col Tailleur Minimaliste",
+      en: "Contemporary Urban Attire with Minimalist Lapel"
+    },
+    category: "tenue-ville",
+    collectionId: "col-ligne-zeus",
+    collectionName: {
+      fr: "Ligne Zeus Sartoriale",
+      en: "Zeus Sartorial Line"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Ligne vestimentaire épurée, col tailleur compact et finition contemporaine.",
+      en: "Streamlined silhouette, compact notch lapel, and contemporary clean finishing."
+    },
+    description: {
+      fr: "La modernité à l’état pur. Une coupe concise conçue pour s’adapter aux journées actives sans rien sacrifier au raffinement sartorial.",
+      en: "Purity of form. A concise cut engineered for active days without sacrificing tailored sartorial distinction."
+    },
+    materials: {
+      fr: "Gabardine de coton souple lavée, finitions biais de coton.",
+      en: "Soft washed cotton gabardine, cotton-bias inner bindings."
+    },
+    craftDetails: {
+      fr: "Coutures rabattues à double aiguille pour une résistance durable.",
+      en: "Double-needle felled seams engineered for long-lasting resilience."
+    },
+    estimatedLeadTime: {
+      fr: "6 à 8 jours ouvrés",
+      en: "6 to 8 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/tenue%20de%20ville/495172093_1270344888431313_5464599962785037775_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/tenue%20de%20ville/495172093_1270344888431313_5464599962785037775_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection sur mesure : 85 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-defile-empereur-zeus",
+    slug: "piece-maitresse-defile-empereur-zeus-traine-spectaculaire",
+    title: {
+      fr: "Pièce Maîtresse Défilé \"Empereur Zeus\" & Traîne Spectaculaire",
+      en: "Runway Masterpiece \"Emperor Zeus\" with Spectacle Train"
+    },
+    category: "defile",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Haute Couture Défilé",
+      en: "Runway Haute Couture"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Création podium suprême révélée lors du défilé officiel, traîne théâtrale et plastron sculptural orné.",
+      en: "Supreme runway showpiece revealed on official fashion week, dramatic train and sculpted ornate plastron."
+    },
+    description: {
+      fr: "L’apogée créative d’Ariel Junior Nzesseu sur les podiums. Cette création d’art transcende les frontières du vêtement pour devenir une véritable œuvre sculpturale portée, saluée par les critiques de mode.",
+      en: "The artistic culmination of Ariel Junior Nzesseu on the runway. This piece transcends conventional couture into wearable sculpture, celebrated by international fashion critics."
+    },
+    materials: {
+      fr: "Brocart lourd fil d’or 24k, velours d’art texturé, structure d’arceau légère en titane couturier.",
+      en: "24k gold threaded heavy brocade, textured velvet art cloth, lightweight titanium runway hooping."
+    },
+    craftDetails: {
+      fr: "110 heures de confection haute couture à la main par le maître créateur.",
+      en: "110 hours of manual haute couture construction by the master designer himself."
+    },
+    estimatedLeadTime: {
+      fr: "Pièce d’art unique d’exposition · Confection sur commande spéciale : 30 jours",
+      en: "Unique exhibition piece · Special commission: 30 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/defile/586919821_1446801877452279_4480509304638377918_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/defile/586919821_1446801877452279_4480509304638377918_n.jpg",
+      "/Junior%20Zeus%20Style/defile/585647902_1446801794118954_2686359696356746202_n.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Confection exclusive sur commande : 720 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-defile-sculpture-volumetrique",
+    slug: "robe-defile-sculpture-volumetrique-plisse",
+    title: {
+      fr: "Robe Défilé Sculpture Volumétrique & Plissé Haute Couture",
+      en: "Runway Sculptural Gown & Haute Couture Pleats"
+    },
+    category: "defile",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Haute Couture Défilé",
+      en: "Runway Haute Couture"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Jeux de volumes 3D audacieux, plissé soleil artisanal et structure avant-gardiste.",
+      en: "Daring 3D volume interplay, hand sunburst pleating, and avant-garde silhouette."
+    },
+    description: {
+      fr: "Présentée sur les planches des plus grands défilés de mode camerounais. Chaque pli a été modelé pour capturer la dynamique de la marche et magnifier les jeux d’ombres et de lumières.",
+      en: "Presented on premier Cameroonian fashion week runways. Every pleat engineered to capture motion dynamics and dramatize shadow and light interplay."
+    },
+    materials: {
+      fr: "Taffetas de soie plissé à la vapeur, baleinage d’art, organza translucide.",
+      en: "Steam-pleated silk taffeta, sculptural couture boning, translucent organza."
+    },
+    craftDetails: {
+      fr: "Plissé au moule traditionnel en carton fort exécuté selon la méthode ancestrale.",
+      en: "Pleated in traditional heavy cardstock molds following heritage French-atelier methods."
+    },
+    estimatedLeadTime: {
+      fr: "Sur commande spéciale : 25 jours ouvrés",
+      en: "Special commission: 25 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/defile/585647902_1446801794118954_2686359696356746202_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/defile/585647902_1446801794118954_2686359696356746202_n.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Confection exclusive : 680 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-defile-soleil-noir",
+    slug: "creation-podium-soleil-noir-epaulettes-aiguisees",
+    title: {
+      fr: "Création Podium \"Soleil Noir\" & Épaulettes Aiguisées",
+      en: "Runway Masterwork \"Black Sun\" & Razor Epaulettes"
+    },
+    category: "defile",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Haute Couture Défilé",
+      en: "Runway Haute Couture"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Architecture sombre et puissante avec épaulettes acérées et taille ceinturée de bronze.",
+      en: "Dark, commanding architecture with razor shoulders and bronze cinched waist."
+    },
+    description: {
+      fr: "Une force visuelle électrisante. Cette pièce maîtresse explore le magnétisme du noir profond et l’autorité de la coupe sartoriale poussée à son extrême.",
+      en: "An electric visual force. This runway centerpiece explores the magnetism of deep black and sartorial authority taken to its artistic edge."
+    },
+    materials: {
+      fr: "Laine texturée dense 450g, cuir sellier bronze, garnitures métalliques.",
+      en: "Heavy textured 450g wool, bronze saddlery leather, custom metallic accents."
+    },
+    craftDetails: {
+      fr: "Moulage sous vide des épaulettes et coutures doublées à la main.",
+      en: "Vacuum-formed shoulder sculpts and double hand-tailored seams."
+    },
+    estimatedLeadTime: {
+      fr: "Sur commande : 20 à 25 jours",
+      en: "On commission: 20 to 25 days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/defile/560907742_1402493125216488_1050509077707239851_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/defile/560907742_1402493125216488_1050509077707239851_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection exclusive : 590 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-defile-corseterie-art",
+    slug: "silhouette-defile-metallisee-corseterie-art",
+    title: {
+      fr: "Silhouette Défilé Métallisée & Corseterie d’Art",
+      en: "Metallic Runway Silhouette & Art Corsetry"
+    },
+    category: "defile",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Haute Couture Défilé",
+      en: "Runway Haute Couture"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Corset sculpté métallique orné d’incrustations miroir et jupe fluide à reflets changeants.",
+      en: "Metallic sculpted corset adorned with mirror inlays and iridescent flowing skirt."
+    },
+    description: {
+      fr: "Une expérimentation stylistique récompensée sur les podiums. La structure rigide du bustier contraste magistralement avec la fluidité vaporeuse de l’étoffe.",
+      en: "An award-winning runway experimentation. The rigid sculpted bustier contrasts masterfully with the fluid lightness of silk."
+    },
+    materials: {
+      fr: "Lamé métallique souple, plaques souples réfléchissantes, mousseline de soie.",
+      en: "Flexible metallic lamé, mirrored flexible plates, silk chiffon."
+    },
+    craftDetails: {
+      fr: "Assemblage de corseterie d’art à 28 baleines spiralées en acier inoxydable.",
+      en: "Art-corsetry construction featuring 28 spiral stainless steel stays."
+    },
+    estimatedLeadTime: {
+      fr: "Sur commande : 18 à 22 jours ouvrés",
+      en: "On commission: 18 to 22 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/defile/559648667_1402493515216449_9034899907434683358_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/defile/559648667_1402493515216449_9034899907434683358_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection exclusive : 540 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-defile-fourreau-or",
+    slug: "grand-fourreau-podium-velours-broderies-or",
+    title: {
+      fr: "Grand Fourreau de Podium Velours & Broderies Fil d’Or",
+      en: "Grand Runway Column Gown in Velvet & Gold Embroidery"
+    },
+    category: "defile",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Haute Couture Défilé",
+      en: "Runway Haute Couture"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Somptueux velours texturé rehaussé d’arabesques d’or brodées à la main.",
+      en: "Sumptuous textured velvet illuminated by hand-stitched golden arabesques."
+    },
+    description: {
+      fr: "Un hommage aux grands rois et reines d’Afrique. La noblesse du velours et la richesse de la broderie manuelle confèrent une prestance inoubliable.",
+      en: "A tribute to the majestic kings and queens of Africa. Noble velvet and rich manual needlework impart unforgettable poise."
+    },
+    materials: {
+      fr: "Velours royal de soie, fils d’or métallisés, doublure satin champagne.",
+      en: "Royal silk velvet, metallic gold embroidery threads, champagne satin lining."
+    },
+    craftDetails: {
+      fr: "75 heures de broderie d’art réalisées fil à fil à l’atelier de Yaoundé.",
+      en: "75 hours of manual needlework crafted thread by thread in Yaoundé."
+    },
+    estimatedLeadTime: {
+      fr: "Sur commande spéciale : 22 à 28 jours",
+      en: "Special commission: 22 to 28 days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/defile/558774983_1402492568549877_7900447169000786279_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/defile/558774983_1402492568549877_7900447169000786279_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection exclusive : 610 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-defile-lumiere-ongola",
+    slug: "ensemble-scenique-haute-couture-lumiere-ongola",
+    title: {
+      fr: "Ensemble Scénique Haute Couture \"Lumière d’Ongola\"",
+      en: "Haute Couture Stage Ensemble \"Light of Ongola\""
+    },
+    category: "defile",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Haute Couture Défilé",
+      en: "Runway Haute Couture"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Ensemble scénique défilé aux reflets prismatiques et coupes déstructurées audacieuses.",
+      en: "Prismatic runway stage creation featuring daring deconstructed silhouettes."
+    },
+    description: {
+      fr: "Conçu pour briller sous les projecteurs des défilés internationaux, cet ensemble réconcilie l’audace moderne et la rigueur de la confection sur mesure.",
+      en: "Designed to radiate under international runway spotlamps, bridging avant-garde daring and bespoke structural discipline."
+    },
+    materials: {
+      fr: "Étoffe satinée réflective, organza texturé, doublure douce.",
+      en: "Reflective satin textile, textured organza, soft lining."
+    },
+    craftDetails: {
+      fr: "Asymétrie étudiée pour flatter la silhouette en mouvement sur le podium.",
+      en: "Calibrated asymmetry engineered to flatter human posture in dynamic motion."
+    },
+    estimatedLeadTime: {
+      fr: "18 à 22 jours ouvrés",
+      en: "18 to 22 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/defile/557542300_1402492398549894_2838079049768727856_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/defile/557542300_1402492398549894_2838079049768727856_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection exclusive : 460 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-defile-eclipse",
+    slug: "creation-defile-avant-garde-eclipse",
+    title: {
+      fr: "Création Défilé Avant-Garde \"Éclipse\"",
+      en: "Avant-Garde Runway Gown \"Eclipse\""
+    },
+    category: "defile",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Haute Couture Défilé",
+      en: "Runway Haute Couture"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Fourreau noir graphique traversé d’une fente lumière argentée asymétrique.",
+      en: "Graphic black gown sliced by an asymmetric silver light ray slit."
+    },
+    description: {
+      fr: "Une déclaration artistique forte qui a marqué le défilé Junior Zeus Style. La coupe épurée et le contraste saisissant créent un impact visuel inoubliable.",
+      en: "A commanding artistic statement from the Junior Zeus runway. The refined lines and striking contrast create an unforgettable aesthetic signature."
+    },
+    materials: {
+      fr: "Drap de soie lourd noir minuit, lamé argent haute résistance.",
+      en: "Heavy midnight black silk cloth, high-resilience silver lamé."
+    },
+    craftDetails: {
+      fr: "Incrustation biseautée au fer à repasser de tailleur sans aucune couture apparente.",
+      en: "Bespoke iron-pressed seamless inlaid facet without visible surface stitching."
+    },
+    estimatedLeadTime: {
+      fr: "16 à 20 jours ouvrés",
+      en: "16 to 20 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/defile/499993321_1278675477598254_978064014177508531_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/defile/499993321_1278675477598254_978064014177508531_n.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection exclusive : 420 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-innov-sculpture-vortex",
+    slug: "creation-sculpturale-innovante-vortex",
+    title: {
+      fr: "Création Sculpturale Innovante \"Vortex\"",
+      en: "Sculptural Innovation Silhouette \"Vortex\""
+    },
+    category: "innovation",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Innovations & Art Couture",
+      en: "Innovations & Art Couture"
+    },
+    year: 2026,
+    status: "piece_unique",
+    summary: {
+      fr: "Ligne sculpturale tridimensionnelle aux volumes ondulatoires audacieux défiant la gravité.",
+      en: "Three-dimensional wave-like sculptural silhouette defying gravity with innovative drapery."
+    },
+    description: {
+      fr: "La recherche et développement de l’atelier Junior Zeus Style au service de l’art vestimentaire. Une création qui explore la rencontre entre la géométrie architecturale et la souplesse du corps humain.",
+      en: "Atelier Junior Zeus Style R&D dedicated to wearable art. Exploring the intersection between architectural geometry and organic bodily grace."
+    },
+    materials: {
+      fr: "Textile technique sculptable à mémoire de forme, soie naturelle, inserts rigides légers.",
+      en: "Shape-memory sculptural techno-textile, natural silk, lightweight internal supports."
+    },
+    craftDetails: {
+      fr: "Modelage thermique exclusif mis au point à l’atelier de Yaoundé.",
+      en: "Exclusive thermal molding technique perfected in our Yaoundé atelier."
+    },
+    estimatedLeadTime: {
+      fr: "Sur commande d’art exclusive : 20 à 30 jours",
+      en: "Exclusive art commission: 20 to 30 days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/innovation/557452931_1402493685216432_1023208288924938565_n.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/innovation/557452931_1402493685216432_1023208288924938565_n.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Confection d’art sur commande : 450 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-innov-constellation",
+    slug: "robe-conceptuelle-innovante-constellation",
+    title: {
+      fr: "Robe Conceptuelle Innovante \"Constellation Morphologique\"",
+      en: "Conceptual Innovation Gown \"Morphologic Constellation\""
+    },
+    category: "innovation",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Innovations & Art Couture",
+      en: "Innovations & Art Couture"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Recherche morphologique innovante alliant découpe laser et assemblage traditionnel sur mesure.",
+      en: "Innovative morphological research combining precision laser cutting with bespoke craftsmanship."
+    },
+    description: {
+      fr: "Une pièce visionnaire qui repousse les standards de la haute confection au Cameroun. Les découpes précises épousent la courbure anatomique avec un équilibre saisissant.",
+      en: "A visionary creation pushing haute couture boundaries in Cameroon. Tailored cuts wrap around anatomical posture with gripping poise."
+    },
+    materials: {
+      fr: "Satin technique thermo-stabilisé, soie mate et fils réfléchissants.",
+      en: "Thermo-stabilized technical satin, matte silk, and reflective micro-filaments."
+    },
+    craftDetails: {
+      fr: "Découpe numérique complétée d’un montage et roulotté intégralement exécutés à la main.",
+      en: "Precision cutting complemented by fully hand-rolled edge construction."
+    },
+    estimatedLeadTime: {
+      fr: "16 à 20 jours ouvrés",
+      en: "16 to 20 business days"
+    },
+    coverImage: "/Junior%20Zeus%20Style/innovation/robe%201.jpg",
+    gallery: [
+      "/Junior%20Zeus%20Style/innovation/robe%201.jpg",
+      "/Junior%20Zeus%20Style/innovation/robe%201%20gallery.jpg"
+    ],
+    isFeatured: false,
+    priceEstimate: "Confection sur commande : 380 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-zeus-tunique-rouge",
+    slug: "tunique-imperiale-ecarlate-broderies",
+    title: {
+      fr: "Tunique Impériale Écarlate & Broderies Florales",
+      en: "Imperial Scarlet Tunic with Floral Embroidery"
+    },
+    category: "sur-mesure",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Haute Couture Signature",
+      en: "Signature Haute Couture"
+    },
+    year: 2026,
+    status: "sur_commande",
+    summary: {
+      fr: "Silhouette iconique portée par Junior Zeus : col officier net, boutonnage asymétrique et somptueuses broderies florales.",
+      en: "Iconic creation worn by Junior Zeus: clean stand collar, asymmetric line, and exquisite floral embroidery."
+    },
+    description: {
+      fr: "Pièce maîtresse emblématique de la maison Junior Zeus Style, immortalisée sur l’affiche officielle de l’atelier. Confectionnée dans un sergé satiné carmin avec une majestueuse cascade de fleurs brodées au fil d’or et ivoire sur le buste.",
+      en: "Signature masterpiece of Junior Zeus Style as showcased on the official atelier poster. Tailored in crimson satin twill with cascading ivory and gold floral embroideries."
+    },
+    materials: {
+      fr: "Sergé de coton et soie rouge impérial, broderies guipure florales, boutons dissimulés.",
+      en: "Imperial red cotton-silk twill, floral guipure embroidery, concealed buttoning."
+    },
+    craftDetails: {
+      fr: "32 heures de confection minutieuse à l’atelier de Yaoundé. Broderies et surpiqûres exécutées à la main.",
+      en: "32 atelier craft hours in Yaoundé. Hand-guided embroidery and tailored felled seams."
+    },
+    estimatedLeadTime: {
+      fr: "10 à 12 jours ouvrés",
+      en: "10 to 12 business days"
+    },
+    coverImage: "/affiche-junior-zeus.jpg",
+    gallery: [
+      "/affiche-junior-zeus.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Confection sur mesure : 175 000 FCFA",
+    needsRealPhoto: false
+  },
+  {
+    id: "cr-robe-sirene-azur",
+    slug: "robe-sirene-azur-roses-sculptees",
+    title: {
+      fr: "Robe Sirène Azur & Roses Sculptées",
+      en: "Celestial Azure Mermaid Gown with Sculpted Roses"
+    },
+    category: "robe-soiree",
+    collectionId: "col-ongola",
+    collectionName: {
+      fr: "Soirées & Galas de Prestige",
+      en: "Prestige Evening & Gala"
+    },
+    year: 2026,
+    status: "disponible",
+    summary: {
+      fr: "Robe de soirée et gala bleu ciel en coupe sirène avec roses tridimensionnelles sculpturales.",
+      en: "Sky blue gala evening gown in sculpted mermaid cut with handcrafted 3D roses."
+    },
+    description: {
+      fr: "Modèle issu de l’affiche officielle Junior Zeus Style. Coupe sirène ajustée qui sublime la démarche, confectionnée en satin duchesse lumineux et rehaussée de volumineuses roses en tissu modelées à la main.",
+      en: "Design from the official Junior Zeus Style poster. Tailored mermaid cut accentuating posture, crafted in radiant duchess satin with handmade 3D fabric roses."
+    },
+    materials: {
+      fr: "Satin duchesse bleu azur ciel, doublure douce respirante, baleinage anatomique.",
+      en: "Celestial azure duchess satin, breathable lining, anatomical corsetry stays."
+    },
+    craftDetails: {
+      fr: "Pétales modelés un par un à chaud pour une fleur en relief immortelle.",
+      en: "Individually heat-shaped petals creating enduring 3D sculpted floral relief."
+    },
+    estimatedLeadTime: {
+      fr: "Sur mesure : 12 à 15 jours ouvrés · Location : Disponible",
+      en: "Bespoke: 12 to 15 business days · Rental: Available"
+    },
+    coverImage: "/affiche-junior-zeus.jpg",
+    gallery: [
+      "/affiche-junior-zeus.jpg"
+    ],
+    isFeatured: true,
+    priceEstimate: "Location : 75 000 FCFA · Confection sur mesure : 260 000 FCFA",
+    needsRealPhoto: false
   }
 ];
 
@@ -536,7 +1664,7 @@ export const INITIAL_ARTICLES: JournalArticle[] = [
         en: 'A curated palette of ink black, warm ivory, and bronze illuminates skin tones and facial expressions without visual distraction. True luxury lives in the drape of cloth and armhole precision.'
       }
     ],
-    coverImage: '/src/assets/images/designer_portrait_1790586101363.jpg',
+    coverImage: encodeURI('/Junior Zeus Style/hero 3.jpg'),
     author: 'Ariel Junior Nzesseu',
     featured: true,
     needsRealPhoto: false

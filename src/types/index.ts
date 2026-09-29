@@ -9,11 +9,24 @@ export interface LocalizedString {
   en: string;
 }
 
+export type CreationCategory =
+  | 'robe-mariee'
+  | 'robe-soiree'
+  | 'robe-traditionnelle'
+  | 'tenue-couple'
+  | 'tenue-ville'
+  | 'defile'
+  | 'innovation'
+  | 'ceremonie'
+  | 'sur-mesure'
+  | 'pret-a-porter'
+  | 'accessoires';
+
 export interface Creation {
   id: string;
   slug: string;
   title: LocalizedString;
-  category: 'sur-mesure' | 'ceremonie' | 'pret-a-porter' | 'accessoires';
+  category: CreationCategory;
   collectionId?: string;
   collectionName?: LocalizedString;
   year: number;

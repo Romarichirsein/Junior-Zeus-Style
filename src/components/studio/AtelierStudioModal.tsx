@@ -134,7 +134,7 @@ export const AtelierStudioModal: React.FC<{ isOpen: boolean; onClose: () => void
 
       setResultImage(data.imageUrl);
     } catch (err: any) {
-      setError(err.message || 'Une erreur est survenue lors de la communication avec Gemini.');
+      setError(err.message || 'Une erreur est survenue lors de la génération de l’esquisse.');
     } finally {
       setIsLoading(false);
     }
@@ -144,8 +144,8 @@ export const AtelierStudioModal: React.FC<{ isOpen: boolean; onClose: () => void
     const number = siteSettings.whatsappNumber;
     const msg =
       language === 'fr'
-        ? `Bonjour Junior Zeus Style, j’ai imaginé une esquisse de création sur votre Studio IA : "${prompt.slice(0, 100)}...". Pouvons-nous échanger pour réaliser cette pièce sur mesure à l’atelier ?`
-        : `Hello Junior Zeus Style, I designed a bespoke concept on your AI Studio: "${prompt.slice(0, 100)}...". Can we discuss tailoring this custom creation at your atelier?`;
+        ? `Bonjour Junior Zeus Style, j’ai imaginé une esquisse de création sur votre Studio Virtuel : "${prompt.slice(0, 100)}...". Pouvons-nous échanger pour réaliser cette pièce sur mesure à l’atelier ?`
+        : `Hello Junior Zeus Style, I designed a bespoke concept on your Atelier Studio: "${prompt.slice(0, 100)}...". Can we discuss tailoring this custom creation at your atelier?`;
     return `https://wa.me/${number}?text=${encodeURIComponent(msg)}`;
   };
 
@@ -167,16 +167,16 @@ export const AtelierStudioModal: React.FC<{ isOpen: boolean; onClose: () => void
             <div>
               <div className="flex items-center gap-2">
                 <h2 className="font-editorial text-2xl font-bold tracking-tight text-[#0B0B0C] dark:text-[#F5F1E8]">
-                  {language === 'fr' ? 'Studio de Création & Retouche Haute Couture' : 'Bespoke AI Design & Tailoring Studio'}
+                  {language === 'fr' ? 'Studio de Conception & Retouche Haute Couture' : 'Bespoke Design & Tailoring Studio'}
                 </h2>
                 <span className="text-[10px] font-sans uppercase font-bold tracking-wider px-2 py-0.5 bg-[#9C7A4B] text-white rounded-full">
-                  Gemini 3.1
+                  Atelier Virtuel
                 </span>
               </div>
               <p className="text-xs font-sans text-[#3C2C26]/75 dark:text-[#C8B79C]/75">
                 {language === 'fr'
                   ? 'Générez de nouvelles silhouettes exclusives ou retouchez vos croquis et pièces pour votre confection sur mesure à Yaoundé.'
-                  : 'Generate exclusive silhouettes or edit bespoke garments with text prompts powered by Gemini 3.1.'}
+                  : 'Design exclusive silhouettes or preview tailored custom garments for bespoke crafting in Yaoundé.'}
               </p>
             </div>
           </div>
@@ -375,7 +375,7 @@ export const AtelierStudioModal: React.FC<{ isOpen: boolean; onClose: () => void
                   {isLoading ? (
                     <>
                       <RefreshCw className="w-4 h-4 animate-spin text-[#9C7A4B]" />
-                      <span>{language === 'fr' ? 'Création en cours avec Gemini 3.1...' : 'Generating with Gemini 3.1...'}</span>
+                      <span>{language === 'fr' ? 'Création de l’esquisse en cours...' : 'Designing bespoke concept...'}</span>
                     </>
                   ) : (
                     <>
@@ -486,7 +486,7 @@ export const AtelierStudioModal: React.FC<{ isOpen: boolean; onClose: () => void
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500" />
             <span>
-              Sanity Project ID: <strong>nx00t04k</strong> · Gemini 3.1 Flash Image
+              Maison Junior Zeus Style · Confection sur mesure à Yaoundé
             </span>
           </div>
           <button

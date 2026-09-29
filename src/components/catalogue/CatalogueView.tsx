@@ -21,10 +21,13 @@ export const CatalogueView: React.FC = () => {
 
   const categories = [
     { id: 'all', labelFr: 'Toutes les créations', labelEn: 'All Creations' },
-    { id: 'ceremonie', labelFr: 'Haute Cérémonie', labelEn: 'Ceremonial' },
-    { id: 'sur-mesure', labelFr: 'Sur-mesure Sartorial', labelEn: 'Bespoke Sartorial' },
-    { id: 'pret-a-porter', labelFr: 'Prêt-à-porter', labelEn: 'Ready to Wear' },
-    { id: 'accessoires', labelFr: 'Accessoires & Broderies', labelEn: 'Accessories & Craft' }
+    { id: 'robe-mariee', labelFr: 'Robes de Mariée', labelEn: 'Bridal Gowns' },
+    { id: 'robe-soiree', labelFr: 'Robes de Soirée & Gala', labelEn: 'Evening & Gala' },
+    { id: 'robe-traditionnelle', labelFr: 'Traditionnel & Afritude', labelEn: 'Heritage & Afritude' },
+    { id: 'tenue-couple', labelFr: 'Tenues de Couple', labelEn: 'Couple Ensembles' },
+    { id: 'tenue-ville', labelFr: 'Tenues de Ville & Chic', labelEn: 'Urban & Sartorial Chic' },
+    { id: 'defile', labelFr: 'Haute Couture Défilé', labelEn: 'Runway Couture' },
+    { id: 'innovation', labelFr: 'Innovations & Art', labelEn: 'Innovations & Art' }
   ];
 
   const statuses = [
@@ -35,6 +38,23 @@ export const CatalogueView: React.FC = () => {
     { id: 'archives', labelFr: 'Archives', labelEn: 'Archives' }
   ];
 
+  const getCategoryLabel = (cat: string) => {
+    switch (cat) {
+      case 'robe-mariee': return language === 'fr' ? 'Robe de Mariée' : 'Bridal Gown';
+      case 'robe-soiree': return language === 'fr' ? 'Robe de Soirée' : 'Evening Gown';
+      case 'robe-traditionnelle': return language === 'fr' ? 'Traditionnel & Afritude' : 'Heritage & Afritude';
+      case 'tenue-couple': return language === 'fr' ? 'Tenue de Couple' : 'Couple Ensemble';
+      case 'tenue-ville': return language === 'fr' ? 'Tenue de Ville' : 'Urban Chic';
+      case 'defile': return language === 'fr' ? 'Haute Couture Défilé' : 'Runway Couture';
+      case 'innovation': return language === 'fr' ? 'Innovation & Art' : 'Innovation & Art';
+      case 'ceremonie': return language === 'fr' ? 'Cérémonie' : 'Ceremony';
+      case 'sur-mesure': return language === 'fr' ? 'Sur-mesure' : 'Bespoke';
+      case 'pret-a-porter': return language === 'fr' ? 'Prêt-à-porter' : 'Ready to wear';
+      case 'accessoires': return language === 'fr' ? 'Accessoires' : 'Accessories';
+      default: return cat;
+    }
+  };
+
   const filteredCreations = useMemo(() => {
     return creations.filter((item) => {
       const matchesCategory = selectedCategory === 'all' || item.category === selectedCategory;
@@ -44,11 +64,12 @@ export const CatalogueView: React.FC = () => {
         !query ||
         t(item.title).toLowerCase().includes(query) ||
         t(item.materials).toLowerCase().includes(query) ||
-        t(item.summary).toLowerCase().includes(query);
+        t(item.summary).toLowerCase().includes(query) ||
+        getCategoryLabel(item.category).toLowerCase().includes(query);
 
       return matchesCategory && matchesStatus && matchesSearch;
     });
-  }, [creations, selectedCategory, selectedStatus, searchQuery, t]);
+  }, [creations, selectedCategory, selectedStatus, searchQuery, t, language]);
 
   const getStatusBadge = (status: Creation['status']) => {
     switch (status) {
@@ -170,7 +191,7 @@ export const CatalogueView: React.FC = () => {
 
                 {/* Zero-Pill Unboxed Metadata */}
                 <div className="flex items-center gap-2 text-[11px] font-sans text-[#3C2C26]/60 dark:text-[#C8B79C]/60 mb-2">
-                  <span className="uppercase tracking-wider font-bold text-[#9C7A4B]">{item.category}</span>
+                  <span className="uppercase tracking-wider font-bold text-[#9C7A4B]">{getCategoryLabel(item.category)}</span>
                   <span aria-hidden="true">·</span>
                   <span>{item.year}</span>
                   <span aria-hidden="true">·</span>

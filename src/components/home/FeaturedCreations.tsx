@@ -16,7 +16,7 @@ export const FeaturedCreations: React.FC = () => {
     getWhatsAppUrl
   } = useApp();
 
-  const featured = creations.filter(c => c.isFeatured).slice(0, 4);
+  const featured = creations.filter(c => c.isFeatured).slice(0, 8);
 
   const getStatusLabel = (status: Creation['status']) => {
     switch (status) {
@@ -29,10 +29,18 @@ export const FeaturedCreations: React.FC = () => {
 
   const getCategoryLabel = (category: Creation['category']) => {
     switch (category) {
+      case 'robe-mariee': return language === 'fr' ? 'Robe de Mariée' : 'Bridal Gown';
+      case 'robe-soiree': return language === 'fr' ? 'Robe de Soirée' : 'Evening Gown';
+      case 'robe-traditionnelle': return language === 'fr' ? 'Traditionnel & Afritude' : 'Heritage & Afritude';
+      case 'tenue-couple': return language === 'fr' ? 'Tenue de Couple' : 'Couple Ensemble';
+      case 'tenue-ville': return language === 'fr' ? 'Tenue de Ville' : 'Urban Chic';
+      case 'defile': return language === 'fr' ? 'Haute Couture Défilé' : 'Runway Couture';
+      case 'innovation': return language === 'fr' ? 'Innovation & Art' : 'Innovation & Art';
       case 'ceremonie': return language === 'fr' ? 'Haute Cérémonie' : 'Haute Ceremony';
       case 'sur-mesure': return language === 'fr' ? 'Sur-mesure' : 'Bespoke';
       case 'pret-a-porter': return language === 'fr' ? 'Prêt-à-porter' : 'Ready to wear';
       case 'accessoires': return language === 'fr' ? 'Broderie & Détails' : 'Embroidery & Craft';
+      default: return language === 'fr' ? 'Haute Couture' : 'Haute Couture';
     }
   };
 

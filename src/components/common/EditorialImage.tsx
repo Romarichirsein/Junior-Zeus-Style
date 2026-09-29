@@ -45,16 +45,7 @@ export const EditorialImage: React.FC<EditorialImageProps> = ({
           <span className="text-xs font-serif italic mt-1 max-w-[200px] truncate">{alt}</span>
         </div>
       )}
-
-      {/* Subtle indicator when waiting for real client collection photo */}
-      {needsRealPhoto && (
-        <div className="absolute bottom-2 left-2 right-2 pointer-events-none">
-          <div className="px-2.5 py-1 text-[11px] font-sans tracking-wide uppercase bg-[#0B0B0C]/75 text-[#F5F1E8] backdrop-blur-md border border-[#9C7A4B]/40 inline-flex items-center gap-1.5 rounded-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#9C7A4B] animate-pulse"></span>
-            <span>Shooting réel en attente</span>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
+
