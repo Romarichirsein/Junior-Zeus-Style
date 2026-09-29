@@ -1,0 +1,6 @@
+{
+  "name": "Junior Zeus Style - Maison de Mode & Sur-Mesure",
+  "description": "Maison de création de mode camerounaise basée à Yaoundé. Stylisme contemporain, couture d'exception et pièces sur mesure par Ariel Junior Nzesseu (Junior Zeus).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
